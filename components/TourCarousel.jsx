@@ -20,10 +20,10 @@ const TourCarousel = () => {
         {/* Header Section */}
         <div className="flex flex-col items-end justify-between gap-6 mb-5 md:flex-row">
           <div className="max-w-2xl">
-            <span className="text-emerald-500  font-black uppercase tracking-[0.3em] text-xs mb-2 block">
+            <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
                 Our Packages
               </span>
-            <h2 className="text-emerald-900 text-3xl  font-black tracking-tighter uppercase leading-[0.9] mb-4">
+            <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
               Featured <span className="text-emerald-500">Packages</span>
             </h2>
             <p className="font-medium leading-relaxed tracking-wide text-slate-600">
