@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import Accommodation from "@/components/Accommodation";
 import Footer from "@/components/Footer";
 import GallerySection from "@/components/GallerySection";
 import Hero from "@/components/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
         <TourCarousel/>
         <AboutSection/>
         <VehicleSection/>
+        <Accommodation/>
         <GallerySection/>
         <WhyChooseUs/>
         <Testimonials/>

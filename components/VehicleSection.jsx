@@ -17,10 +17,10 @@ const VehicleSection = () => {
       <div className="container px-4 mx-auto">
         {/* Header - Matching TourCarousel Style */}
         <div className="max-w-3xl mb-10">
-          <span className="text-emerald-500  font-black uppercase tracking-[0.3em] text-xs mb-2 block">
+          <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
             Our Private Fleet
           </span>
-          <h2 className="text-emerald-900 text-3xl  font-black tracking-tighter uppercase leading-[0.9] mb-4">
+          <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
             Luxury <span className="text-emerald-500">FleetS</span> 
           </h2>
           <p className="font-medium leading-relaxed tracking-wider text-slate-500 text">

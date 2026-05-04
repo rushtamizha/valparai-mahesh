@@ -97,7 +97,7 @@ export default function AboutValparai() {
             </div>
 
             <div>
-              <h2 className="text-emerald-900 text-3xl  font-black tracking-tighter uppercase leading-[0.9] mb-4">
+              <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
                 the <span className=" text-emerald-500">heritage.</span>
               </h2>
               <p className="mb-8 font-medium leading-relaxed tracking-wider capitalize text-slate-500">

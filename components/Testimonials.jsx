@@ -35,10 +35,10 @@ const Testimonials = () => {
       <div className="container px-6 mx-auto">
         {/* Header - Tight & Centered */}
        <div className="max-w-3xl mb-10">
-          <span className="text-emerald-500  font-black uppercase tracking-[0.3em] text-xs mb-2 block">
+          <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
             Testimonials
           </span>
-          <h2 className="text-emerald-900 text-3xl  font-black tracking-tighter uppercase leading-[0.9] mb-4">
+          <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
             Customers <span className="text-emerald-500">Feedbacks</span> 
           </h2>
         </div>

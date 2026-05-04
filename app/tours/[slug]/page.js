@@ -87,7 +87,7 @@ const TourDetails = ({ params }) => {
             <div className="lg:col-span-8">
               {/* Overview */}
               <div className="mb-10">
-                <h2 className="text-emerald-900 text-3xl mb-5 font-black tracking-tighter uppercase leading-[0.9] ">
+                <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
                   experience <span className="text-emerald-500">overview.</span>
                 </h2>
 
@@ -105,15 +105,15 @@ const TourDetails = ({ params }) => {
                 {tour.itinerary.map((day, idx) => (
                   <div
                     key={idx}
-                    className="overflow-hidden bg-white border border-slate-100 rounded-3xl "
+                    className="overflow-hidden bg-white rounded-3xl "
                   >
                     {/* Toggle Header */}
                     <button
                       onClick={() => setOpenDay(openDay === idx ? -1 : idx)}
-                      className="flex items-center justify-between w-full p-8 text-left transition-colors "
+                      className="flex items-center justify-between w-full p-4 text-left transition-colors "
                     >
                       <div className="flex items-center gap-6">
-                        <span className="text-3xl font-black text-emerald-500">
+                        <span className="text-2xl font-black text-emerald-500">
                           0{idx + 1}
                         </span>
                         <div>
@@ -142,7 +142,7 @@ const TourDetails = ({ params }) => {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.4, ease: "circOut" }}
                         >
-                          <div className="px-8 pb-8 space-y-8">
+                          <div className="pb-8 space-y-8 ">
                             {/* IMAGES UNDER TITLE FOR THE SPECIFIC DAY */}
                             {day.activities &&
                               day.activities[0]?.placeImage && (
@@ -215,16 +215,16 @@ const TourDetails = ({ params }) => {
               </div>
 
               {/* TERMS & CONDITIONS */}
-              <div className="p-10 bg-slate-900 rounded-[3.5rem] text-white relative overflow-hidden">
+              <div className="relative p-4 overflow-hidden text-white">
                 <div className="relative z-10">
-                  <h4 className="flex items-center gap-3 mb-8 text-xl font-black capitalize text-emerald-400">
+                  <h4 className="flex items-center gap-3 mb-8 text-xl font-black capitalize text-emerald-800">
                     <AlertCircle size={20} /> terms & conditions
                   </h4>
                   <ul className="grid gap-4 md:grid-cols-2">
                     {tour.termsConditions.map((term, i) => (
                       <li
                         key={i}
-                        className="text-[11px] font-medium text-slate-300 leading-relaxed flex gap-2 capitalize"
+                        className="flex gap-2 text-sm font-medium leading-relaxed capitalize text-slate-600"
                       >
                         <span className="text-emerald-500">•</span> {term}
                       </li>
@@ -251,13 +251,13 @@ const TourDetails = ({ params }) => {
       {/* 3. PREMIUM BOOKING FORM (Same as before) */}
       <section
         id="book"
-        className="bg-emerald-950 py-24 rounded-t-[4rem] md:rounded-t-[6rem]"
+        className="bg-emerald-950 py-14 rounded-t-[4rem] md:rounded-t-[6rem]"
       >
         <div className="container px-6 mx-auto">
           <div className="max-w-6xl mx-auto">
             <div className="grid items-center gap-16 lg:grid-cols-2">
               <div>
-                <h2 className="mb-8 text-4xl font-black leading-none tracking-tighter text-white capitalize ">
+                <h2 className="mb-8 text-3xl font-black leading-none tracking-tighter text-white capitalize ">
                   ready to 
                   <span className="text-emerald-400"> book?</span>
                 </h2>
@@ -305,7 +305,7 @@ const TourDetails = ({ params }) => {
                         size={18}
                       />
 
-                      <select className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none appearance-none bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500">
+                      <select className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none appearance-none text-emerald-700 bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500">
                         {tour.priceTiers.map((t, idx) => (
                           <option key={idx} value={t.members}>
                             {t.members}
@@ -366,14 +366,14 @@ const Input = ({ icon, ...props }) => (
 
     <input
       {...props}
-      className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500"
+      className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none text- bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500 text-emerald-700"
     />
   </div>
 );
 
 const InclusionCard = ({ title, data, icon, isEmerald }) => (
   <div
-    className={`p-10 rounded-[2rem] ${isEmerald ? "bg-emerald-50" : "bg-red-50"}`}
+    className={`p-4 rounded-[2rem] `}
   >
     <h4
       className={`font-black uppercase mb-6 flex items-center gap-2 ${isEmerald ? "text-emerald-900" : "text-red-800"}`}

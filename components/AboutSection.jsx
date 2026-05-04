@@ -15,7 +15,7 @@ import { companyConfig } from "@/data/data";
 
 const AboutSection = () => {
   return (
-    <section className="overflow-hidden bg-white pb-15 ">
+    <section className="overflow-hidden bg-white py-15 ">
       <div className="container px-4 mx-auto">
         <div className="grid items-start gap-16 lg:grid-cols-12">
           
@@ -26,12 +26,11 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-emerald-500  font-black uppercase tracking-[0.3em] text-xs mb-2 block">
+              <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
                 The Heritage of Valparai
               </span>
-              <h2 className="text-emerald-900 text-3xl  font-black tracking-tighter uppercase leading-[0.9] mb-4">
-                Crafting <span className="text-emerald-500">Memories</span> <br /> 
-                Through Nature
+              <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
+                Crafting <span className="text-emerald-500">Memories</span>
               </h2>
               
               <div className="mb-5 space-y-6 font-medium leading-relaxed tracking-wide text-slate-600">

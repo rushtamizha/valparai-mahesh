@@ -1,10 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 @import "tailwindcss";
 *{
   scrollbar-width: none;
-  font-family: "Quicksand";
+  font-family: "Space Grotesk";
   scroll-behavior: smooth;
 }
 :root {

@@ -20,10 +20,10 @@ const GallerySection = () => {
         {/* Header - Matching previous sections 100% */}
         <div className="flex flex-col justify-between gap-8 mb-16 md:flex-row">
           <div className="max-w-2xl">
-            <span className="text-emerald-500  font-black uppercase tracking-[0.3em] text-xs mb-2 block">
+            <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
               Visual Journals
             </span>
-            <h2 className="text-emerald-900 text-3xl  font-black tracking-tighter uppercase leading-[0.9] ">
+            <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
               Capture The <span className="text-emerald-500">Wild</span>
             </h2>
           </div>
