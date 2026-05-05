@@ -28,6 +28,7 @@ import {
 import { tourPackages, companyConfig } from "@/data/data";
 import TourHero from "@/components/TourHero";
 import RelatedTours from "@/components/RelatedTours";
+import TourImageGallery from "@/components/TourImageGallery";
 
 const TourDetails = ({ params }) => {
   const { slug } = React.use(params);
@@ -80,6 +81,9 @@ const TourDetails = ({ params }) => {
         </div>
       </section>
 
+      <TourImageGallery  images={tour.places} 
+      title={tour.title} />
+
       {/* 2. MAIN CONTENT GRID */}
       <section className="py-10">
         <div className="container px-6 mx-auto">
@@ -102,7 +106,7 @@ const TourDetails = ({ params }) => {
                   detailed itinerary
                 </h3>
 
-                {tour.itinerary.map((day, idx) => (
+                {tour.itinerary?.map((day, idx) => (
                   <div
                     key={idx}
                     className="overflow-hidden bg-white rounded-3xl "
@@ -262,7 +266,7 @@ const TourDetails = ({ params }) => {
                   <span className="text-emerald-400"> book?</span>
                 </h2>
 
-                <div className="grid grid-cols-2 gap-4 mb-10">
+                <div className="grid hidden grid-cols-2 gap-4 mb-10">
                   {tour.priceTiers.map((tier, i) => (
                     <div
                       key={i}

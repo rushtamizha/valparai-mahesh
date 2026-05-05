@@ -171,13 +171,13 @@ export const heroData = [
 export const tourPackages = [
   {
     id: 1,
-    title: "VALPARAI TOPSLIP TOUR PACKAGE",
-    slug: "valparai-local-tour-package",
-    duration: "2 Night 3 Days",
-    basePrice: " On Request",
-    tourFrom: "Valparai",
+    title: "Pollachi Valparai Tour Package",
+    slug: "pollachi-valparai-2d-1n",
+    duration: "Night 2 Days",
+    basePrice: "On Request",
+    tourFrom: "Pollachi / Coimbatore",
     description:
-      "Valparai is a serene, scenic hill station in Tamil Nadu’s Anamalai Hills, famous for its sprawling tea estates, lush evergreen forests, and rich biodiversity. It is widely recognized for its 40 hairpin bends leading up to the hills, the expansive Sholayar Dam, and wildlife, including the endangered lion-tailed macaque and Nilgiri Tahr",
+      "A refreshing short escape to the '7th Heaven'. Experience the thrill of 40 hairpin bends, the misty Aliyar Dam, and the lush tea carpets of Valparai in a compact yet fulfilling itinerary.",
     termsConditions: [
       "The rates are inclusive of all taxes",
       "All the bookings must be confirmed with a 50% advance payment.",
@@ -192,155 +192,33 @@ export const tourPackages = [
       { members: "4 members", price: "2,499" },
       { members: "5+ members", price: "1,999" },
     ],
-    itinerary: [
-      {
-        day: "01",
-        title: "Arrival Valparai",
-        activities: [
-          {
-            id: 1,
-            place: "Arrival Valparai",
-            description: "Pickup transfer to hotel, free day",
-            placeImage:
-              "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/45/58/a6/aliyar-dam-reservoir.jpg?w=1200&h=-1&s=1",
-          },
-        ],
-      },
-      {
-        day: "02",
-        title: "Proceed for Aliyar Dam",
-        activities: [
-          {
-            id: 1,
-            place: "Monkey Falls",
-            description:
-              "A natural wonder located on the foothills of the Anamalai range. These refreshing waterfalls are surrounded by evergreen forests and rocky cliffs, making it a perfect spot for a quick dip and nature photography during the ascent to Valparai.",
-            placeImage: "/images/attractions/monkey-falls.jpg",
-          },
-          {
-            id: 2,
-            place: "Valparai Sightseeing",
-            description:
-              "Explore the 'Seventh Heaven' of the Western Ghats. From sprawling tea estates that look like green carpets to mist-covered valleys, the sightseeing covers the best of high-altitude biodiversity and colonial-era charm.",
-            placeImage: "/images/attractions/valparai-view.jpg",
-          },
-          {
-            id: 3,
-            place: "Masaniamman Temple",
-            description:
-              "A powerful ancient shrine located in Anaimalai. Dedicated to Goddess Masaniamman, this temple is unique for its reclining deity and is a significant spiritual landmark for travelers seeking blessings before their hill journey.",
-            placeImage: "/images/attractions/masaniamman.jpg",
-          },
-          {
-            id: 4,
-            place: "Topslip",
-            description:
-              "Located in the Anamalai Tiger Reserve, Topslip is a wildlife enthusiast's paradise. It offers elephant safaris, forest treks, and the chance to spot rare species like the Nilgiri Tahr and lion-tailed macaques in their natural habitat.",
-            placeImage: "/images/attractions/topslip.jpg",
-          },
-          {
-            id: 5,
-            place: "Aliyar Dam",
-            description:
-              "A magnificent feat of engineering nestled in the Anamalai foothills. Renowned for its well-maintained park, aquarium, and boat rides, it provides a breathtaking 360-degree view of the surrounding mountains reflecting in the blue waters.",
-            placeImage: "/images/attractions/aliyar-dam.jpg",
-          },
-          {
-            id: 6,
-            place: "Thirumoorthy Hills",
-            description:
-              "A serene spot famous for the Amanalingeswarar Temple located at the foot of the hills. The area combines spirituality with nature, featuring a beautiful dam and a perennial stream that flows through the rugged terrain.",
-            placeImage: "/images/attractions/thirumoorthy.jpg",
-          },
-          {
-            id: 7,
-            place: "Thirumurthi Falls",
-            description:
-              "A gentle yet captivating waterfall that cascades down the Thirumoorthy Hills. Known for its medicinal properties and calm atmosphere, it is a favorite for families and those looking for a peaceful forest bath.",
-            placeImage: "/images/attractions/thirumurthi-falls.jpg",
-          },
-          {
-            id: 8,
-            place: "Amaravathy Dam",
-            description:
-              "A major dam in the Indira Gandhi Wildlife Sanctuary. It is famous for its massive reservoir and the steep slopes of the Anamalai Hills that surround it, creating a dramatic landscape perfect for bird watching.",
-            placeImage: "/images/attractions/amaravathy.jpg",
-          },
-          {
-            id: 9,
-            place: "Crocodile Park",
-            description:
-              "Home to the largest population of crocodiles in South India. This conservation center at Amaravathy offers a safe look at these prehistoric reptiles in a naturalistic setting, educating visitors on wildlife preservation.",
-            placeImage: "/images/attractions/crocodile-park.jpg",
-          },
-          {
-            id: 10,
-            place: "Nallamudi Poonjolai",
-            description:
-              "One of the most spectacular viewpoints in Valparai. Walk through a private tea estate to reach a cliff edge that offers a stunning view of the Anamalai mountain range and deep tribal valleys below.",
-            placeImage: "/images/attractions/nallamudi.jpg",
-          },
-          {
-            id: 11,
-            place: "Koolangal River",
-            description:
-              "A crystal-clear, shallow river famous for its smooth pebbles and gentle flow. It’s the best spot in Valparai to relax your feet in cold water while surrounded by lush tea bushes on both sides.",
-            placeImage: "/images/attractions/koolangal.jpg",
-          },
-          {
-            id: 12,
-            place: "Palani Murugan Temple",
-            description:
-              "One of the six abodes of Lord Murugan. Perched atop a hill accessible by steps or a winch/rope car, this temple is a masterpiece of Dravidian architecture and offers panoramic views of the plains below.",
-            placeImage: "/images/attractions/palani.jpg",
-          },
-          {
-            id: 13,
-            place: "Night Halt",
-            description:
-              "Relax and rejuvenate in the cool mountain air. Our overnight stays are arranged in premium bungalows or resorts surrounded by tea plantations, allowing you to experience the true silence of the hills.",
-            placeImage: "/images/attractions/resort.jpg",
-          },
-        ],
-      },
-      {
-        day: "03",
-        title: "Check out hotel",
-        activities: [
-          {
-            id: 1,
-            place: "Arrival Valparai",
-            description:
-              "Evening drop back to Pollachi/Coimbatore Railway Station or Airport.",
-          },
-        ],
-      },
-    ],
     includes: [
-      "1 Night Stay",
+      "Night Stay",
       "Private Cab",
-      "Day-1 Dinner",
-      "Day-2 Breakfast",
+      "Dinner",
+      "Breakfast",
       "Guide Charges",
       "Entry Tickets",
     ],
     excludes: ["Personal expenses", "Lunch"],
-    image: "/HeroImages/valparai-tour-package.webp",
+    image: "/pollachi-valparai/valparai-pollachi-1.jpg",
     places: [
-      "/HeroImages/valparai-tour-package.webp",
-      "/HeroImages/valparai-tour-package.webp",
-      "/HeroImages/valparai-tour-package.webp",
+      "/pollachi-valparai/valparai-pollachi-1.jpg",
+      "/pollachi-valparai/valparai-pollachi-2.webp",
+      "/pollachi-valparai/valparai-pollachi-3.jpg",
+      "/pollachi-valparai/valparai-pollachi-4.jpg",
     ],
-    tag: "Best Seller",
-  },{
+    tag: "Quick Escape",
+  },
+  {
     id: 2,
-    title: "VALPARAI WILDLIFE TOUR PACKAGE",
-    slug: "valparai-local-tour-package",
-    duration: "2 Night 3 Days",
-    basePrice: " On Request",
-    tourFrom: "Valparai",
+    title: "Pollachi Topslip Parambikulam Valparai",
+    slug: "pollachi-topslip-valparai-3d-2n",
+    duration: "2 Nights 3 Days",
+    basePrice: "On Request",
+    tourFrom: "Pollachi",
     description:
-      "Valparai is a serene, scenic hill station in Tamil Nadu’s Anamalai Hills, famous for its sprawling tea estates, lush evergreen forests, and rich biodiversity. It is widely recognized for its 40 hairpin bends leading up to the hills, the expansive Sholayar Dam, and wildlife, including the endangered lion-tailed macaque and Nilgiri Tahr",
+      "The ultimate wildlife and hill station combo. Explore the teak forests of Topslip, the bamboo rafting at Parambikulam, and the serene tea estates of Valparai.",
     termsConditions: [
       "The rates are inclusive of all taxes",
       "All the bookings must be confirmed with a 50% advance payment.",
@@ -355,146 +233,391 @@ export const tourPackages = [
       { members: "4 members", price: "2,499" },
       { members: "5+ members", price: "1,999" },
     ],
-    itinerary: [
-      {
-        day: "01",
-        title: "Arrival Valparai",
-        activities: [
-          {
-            id: 1,
-            place: "Arrival Valparai",
-            description: "Pickup transfer to hotel, free day",
-            placeImage:
-              "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/45/58/a6/aliyar-dam-reservoir.jpg?w=1200&h=-1&s=1",
-          },
-        ],
-      },
-      {
-        day: "02",
-        title: "Proceed for Aliyar Dam",
-        activities: [
-          {
-            id: 1,
-            place: "Monkey Falls",
-            description:
-              "A natural wonder located on the foothills of the Anamalai range. These refreshing waterfalls are surrounded by evergreen forests and rocky cliffs, making it a perfect spot for a quick dip and nature photography during the ascent to Valparai.",
-            placeImage: "/images/attractions/monkey-falls.jpg",
-          },
-          {
-            id: 2,
-            place: "Valparai Sightseeing",
-            description:
-              "Explore the 'Seventh Heaven' of the Western Ghats. From sprawling tea estates that look like green carpets to mist-covered valleys, the sightseeing covers the best of high-altitude biodiversity and colonial-era charm.",
-            placeImage: "/images/attractions/valparai-view.jpg",
-          },
-          {
-            id: 3,
-            place: "Masaniamman Temple",
-            description:
-              "A powerful ancient shrine located in Anaimalai. Dedicated to Goddess Masaniamman, this temple is unique for its reclining deity and is a significant spiritual landmark for travelers seeking blessings before their hill journey.",
-            placeImage: "/images/attractions/masaniamman.jpg",
-          },
-          {
-            id: 4,
-            place: "Topslip",
-            description:
-              "Located in the Anamalai Tiger Reserve, Topslip is a wildlife enthusiast's paradise. It offers elephant safaris, forest treks, and the chance to spot rare species like the Nilgiri Tahr and lion-tailed macaques in their natural habitat.",
-            placeImage: "/images/attractions/topslip.jpg",
-          },
-          {
-            id: 5,
-            place: "Aliyar Dam",
-            description:
-              "A magnificent feat of engineering nestled in the Anamalai foothills. Renowned for its well-maintained park, aquarium, and boat rides, it provides a breathtaking 360-degree view of the surrounding mountains reflecting in the blue waters.",
-            placeImage: "/images/attractions/aliyar-dam.jpg",
-          },
-          {
-            id: 6,
-            place: "Thirumoorthy Hills",
-            description:
-              "A serene spot famous for the Amanalingeswarar Temple located at the foot of the hills. The area combines spirituality with nature, featuring a beautiful dam and a perennial stream that flows through the rugged terrain.",
-            placeImage: "/images/attractions/thirumoorthy.jpg",
-          },
-          {
-            id: 7,
-            place: "Thirumurthi Falls",
-            description:
-              "A gentle yet captivating waterfall that cascades down the Thirumoorthy Hills. Known for its medicinal properties and calm atmosphere, it is a favorite for families and those looking for a peaceful forest bath.",
-            placeImage: "/images/attractions/thirumurthi-falls.jpg",
-          },
-          {
-            id: 8,
-            place: "Amaravathy Dam",
-            description:
-              "A major dam in the Indira Gandhi Wildlife Sanctuary. It is famous for its massive reservoir and the steep slopes of the Anamalai Hills that surround it, creating a dramatic landscape perfect for bird watching.",
-            placeImage: "/images/attractions/amaravathy.jpg",
-          },
-          {
-            id: 9,
-            place: "Crocodile Park",
-            description:
-              "Home to the largest population of crocodiles in South India. This conservation center at Amaravathy offers a safe look at these prehistoric reptiles in a naturalistic setting, educating visitors on wildlife preservation.",
-            placeImage: "/images/attractions/crocodile-park.jpg",
-          },
-          {
-            id: 10,
-            place: "Nallamudi Poonjolai",
-            description:
-              "One of the most spectacular viewpoints in Valparai. Walk through a private tea estate to reach a cliff edge that offers a stunning view of the Anamalai mountain range and deep tribal valleys below.",
-            placeImage: "/images/attractions/nallamudi.jpg",
-          },
-          {
-            id: 11,
-            place: "Koolangal River",
-            description:
-              "A crystal-clear, shallow river famous for its smooth pebbles and gentle flow. It’s the best spot in Valparai to relax your feet in cold water while surrounded by lush tea bushes on both sides.",
-            placeImage: "/images/attractions/koolangal.jpg",
-          },
-          {
-            id: 12,
-            place: "Palani Murugan Temple",
-            description:
-              "One of the six abodes of Lord Murugan. Perched atop a hill accessible by steps or a winch/rope car, this temple is a masterpiece of Dravidian architecture and offers panoramic views of the plains below.",
-            placeImage: "/images/attractions/palani.jpg",
-          },
-          {
-            id: 13,
-            place: "Night Halt",
-            description:
-              "Relax and rejuvenate in the cool mountain air. Our overnight stays are arranged in premium bungalows or resorts surrounded by tea plantations, allowing you to experience the true silence of the hills.",
-            placeImage: "/images/attractions/resort.jpg",
-          },
-        ],
-      },
-      {
-        day: "03",
-        title: "Check out hotel",
-        activities: [
-          {
-            id: 1,
-            place: "Arrival Valparai",
-            description:
-              "Evening drop back to Pollachi/Coimbatore Railway Station or Airport.",
-          },
-        ],
-      },
-    ],
     includes: [
-      "1 Night Stay",
+      "Night Stay",
       "Private Cab",
-      "Day-1 Dinner",
-      "Day-2 Breakfast",
+      "Dinner",
+      "Breakfast",
       "Guide Charges",
       "Entry Tickets",
     ],
     excludes: ["Personal expenses", "Lunch"],
-    image: "/HeroImages/valparai-tour-package.webp",
+    image: "/pollachi-topslip-valparai/pollachi-topslip-valparai-1.webp",
     places: [
-      "/HeroImages/valparai-tour-package.webp",
-      "/HeroImages/valparai-tour-package.webp",
-      "/HeroImages/valparai-tour-package.webp",
+      "/pollachi-topslip-valparai/pollachi-topslip-valparai-1.webp",
+      "/pollachi-topslip-valparai/pollachi-topslip-valparai-2.webp",
+      "/pollachi-topslip-valparai/pollachi-topslip-valparai-3.jpg",
+      "/pollachi-topslip-valparai/pollachi-topslip-valparai-4.jpg",
+      "/pollachi-topslip-valparai/pollachi-topslip-valparai-5.webp",
     ],
+    
     tag: "Best Seller",
+  },
+  {
+    id: 3,
+    title: "Pollachi Valparai Athirapally Waterfalls",
+    slug: "valparai-athirapally-3d-2n",
+    duration: "2 Nights 3 Days",
+    basePrice: "On Request",
+    tourFrom: "Pollachi / Valparai",
+    description:
+      "Witness the majestic Athirapally Waterfalls (the Niagara of India) combined with the peaceful heights of Valparai. A journey through deep rainforests and cascading waters.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/valparai-athirapally/athirapally-falls-in.jpg",
+    places: ["/valparai-athirapally/athirapally-falls-in.jpg", "/valparai-athirapally/Best-Munnar-Tea-Estates.png","/valparai-athirapally/munnar.jpg","/valparai-athirapally/Valparai.jpg"],
+    tag: "Nature Lovers",
+  },
+  {
+    id: 4,
+    title: "Topslip Parambikulam Valparai Athirapally",
+    slug: "mega-wildlife-waterfalls-4d-3n",
+    duration: "3 Nights 4 Days",
+    basePrice: "On Request",
+    tourFrom: "Coimbatore / Pollachi",
+    description:
+      "A comprehensive 4-day tour covering the best of Western Ghats: Wildlife at Topslip, the deep reservoir of Parambikulam, and the thunderous Athirapally falls.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/wildlife-waterfalls/parambikulam1.webp",
+    places: ["/wildlife-waterfalls/athirapally-tours.webp", "/wildlife-waterfalls/Parambikulam.jpg","/wildlife-waterfalls/parambikulam1.webp","/wildlife-waterfalls/valparai.webp"],
+    tag: "Adventure",
+  },
+  {
+    id: 5,
+    title: "Isha Marudamalai Wildlife & Waterfalls",
+    slug: "coimbatore-isha-valparai-5d-4n",
+    duration: "4 Nights 5 Days",
+    basePrice: "On Request",
+    tourFrom: "Coimbatore",
+    description:
+      "A spiritual and natural odyssey. Visit the Adiyogi at Isha and Marudamalai temple, followed by an extensive tour of Topslip and Valparai's natural wonders.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/coimbatore-isha-valparai/coimbatore-isha-valparai1.webp",
+    places: ["/coimbatore-isha-valparai/coimbatore-isha-valparai1.webp", "/coimbatore-isha-valparai/coimbatore-isha-valparai2.webp","/coimbatore-isha-valparai/coimbatore-isha-valparai3.webp","/coimbatore-isha-valparai/coimbatore-isha-valparai4.webp","/coimbatore-isha-valparai/coimbatore-isha-valparai5.webp"],
+    tag: "Spiritual & Nature",
+  },
+
+  // --- OOTY PACKAGES ---
+  {
+    id: 6,
+    title: "Coonoor Ooty Pykara Mudumalai",
+    slug: "ooty-mudumalai-3d-2n",
+    duration: "2 Nights 3 Days",
+    basePrice: "On Request",
+    tourFrom: "Coimbatore",
+    description:
+      "Explore the Queen of Hills. From the heritage toy train in Coonoor to the wildlife of Mudumalai and the crystal waters of Pykara lake.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/ooty-mudumalai/ooty-mudumalai1.jpg",
+    places:["/ooty-mudumalai/ooty-mudumalai1.jpg","/ooty-mudumalai/ooty-mudumalai2.png","/ooty-mudumalai/ooty-mudumalai3.jpg",'/ooty-mudumalai/ooty-mudumalai4.jpg',"/ooty-mudumalai/ooty-mudumalai5.webp"],
+    tag: "Classic Ooty",
+  },
+  {
+    id: 7,
+    title: "Ooty Pykara Masinagudi Adventure",
+    slug: "ooty-masinagudi-4d-3n",
+    duration: "3 Nights 4 Days",
+    basePrice: "On Request",
+    tourFrom: "Coimbatore",
+    description:
+      "A deeper look into the Blue Mountains. Includes the scenic Pykara falls and an adventurous stay in Masinagudi, known for its dense wildlife sightings.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/ooty-masinagudi/ooty-masinagudi1.jpg",
+    places:["/ooty-masinagudi/ooty-masinagudi1.jpg","/ooty-masinagudi/ooty-masinagudi2.jpg","/ooty-masinagudi/ooty-masinagudi3.jpg","/ooty-masinagudi/ooty-masinagudi4.jpg","/ooty-masinagudi/ooty-masinagudi5.webp"],
+    tag: "Wildlife Choice",
+  },
+
+  // --- KODAIKANAL PACKAGES ---
+  {
+    id: 8,
+    title: "Kodaikanal Local & Sightseeing",
+    slug: "kodaikanal-3d-2n",
+    duration: "2 Nights 3 Days",
+    basePrice: "On Request",
+    tourFrom: "Kodai Road / Madurai",
+    description:
+      "Visit the Princess of Hill Stations. Walk through the Coaker's Walk, boat in the Kodai Lake, and enjoy the mist at Pillar Rocks.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/kodaikanal/kodaikanal1.jpg",
+    places:["/kodaikanal/kodaikanal1.jpg","/kodaikanal/kodaikanal2.jpg","/kodaikanal/kodaikanal3.jpg","/kodaikanal/kodaikanal4.webp"],
+    tag: "Family Favorite",
+  },
+  {
+    id: 9,
+    title: "Grand Hill Station: Kodai Ooty Coonoor",
+    slug: "kodai-ooty-6d-5n",
+    duration: "5 Nights 6 Days",
+    basePrice: "On Request",
+    tourFrom: "Coimbatore",
+    description:
+      "The ultimate Tamil Nadu hill station tour. Covering Kodaikanal, Ooty, Coonoor, and the Mudumalai tiger reserve in one grand journey.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/kodai-ooty/kodai-ooty1.jpg",
+    places:["/kodai-ooty/kodai-ooty1.jpg","/kodai-ooty/kodai-ooty2.png","/kodai-ooty/kodai-ooty3.avif","/kodai-ooty/kodai-ooty4.jpg","/kodai-ooty/kodai-ooty5.jpg","/kodai-ooty/kodai-ooty6.avif"],
+    tag: "Premium Grand Tour",
+  },
+
+  // --- KERALA PACKAGES ---
+  {
+    id: 10,
+    title: "Munnar Kanthaloor Marayoor",
+    slug: "munnar-kanthaloor-3d-2n",
+    duration: "2 Nights 3 Days",
+    basePrice: "On Request",
+    tourFrom: "Udumalpet / Coimbatore",
+    description:
+      "Explore the offbeat beauty of Kanthaloor fruit orchards and the ancient Dolmens of Marayoor along with the tea gardens of Munnar.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/munnar-kanthaloor/munnar-kanthaloor1.jpg",
+    places:["/munnar-kanthaloor/munnar-kanthaloor1.jpg","/munnar-kanthaloor/munnar-kanthaloor2.jpg","/munnar-kanthaloor/munnar-kanthaloor3.webp","/munnar-kanthaloor/munnar-kanthaloor4.webp"],
+    tag: "Offbeat Kerala",
+  },
+  {
+    id: 11,
+    title: "Alleppey Houseboat & Munnar",
+    slug: "alleppey-munnar-5d-4n",
+    duration: "4 Nights 5 Days",
+    basePrice: "On Request",
+    tourFrom: "Cochin",
+    description:
+      "Experience the quintessential Kerala: A romantic night in an Alleppey Houseboat followed by the rolling tea hills of Munnar.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/alleppey-munnar/alleppey-munnar1.jpg",
+    places:["/alleppey-munnar/alleppey-munnar1.jpg","/alleppey-munnar/alleppey-munnar2.jpg","/alleppey-munnar/alleppey-munnar3.jpg"],
+    tag: "Honeymoon Special",
+  },
+  {
+    id: 12,
+    title: "Complete Kerala Panorama",
+    slug: "kerala-panorama-10d-9n",
+    duration: "9 Nights 10 Days",
+    basePrice: "On Request",
+    tourFrom: "Cochin",
+    description:
+      "The most comprehensive Kerala experience. From the hills of Munnar and Wayanad to the backwaters of Alleppey and the beaches of Kovalam.",
+    termsConditions: [
+      "The rates are inclusive of all taxes",
+      "All the bookings must be confirmed with a 50% advance payment.",
+      "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children",
+      "15 days before scheduled arrival – 75% refund.",
+      "8 – 14 days before scheduled arrival – 50% refund.",
+      "7 days or less – no refund.",
+    ],
+    priceTiers: [
+      { members: "2 members", price: "3,499" },
+      { members: "3 members", price: "2,999" },
+      { members: "4 members", price: "2,499" },
+      { members: "5+ members", price: "1,999" },
+    ],
+    includes: [
+      "Night Stay",
+      "Private Cab",
+      "Dinner",
+      "Breakfast",
+      "Guide Charges",
+      "Entry Tickets",
+    ],
+    excludes: ["Personal expenses", "Lunch"],
+    image: "/kerala-panorama/kerala-panorama2.webp",
+    places:["/kerala-panorama/kerala-panorama2.webp","/kerala-panorama/kerala-panorama3.jpg","/kerala-panorama/kerala-panorama4.webp","/kerala-panorama/kerala-panorama5.webp","/kerala-panorama/kerala-panorama6.jpg"],
+    tag: "Signature Journey",
   },
 ];
 
@@ -580,206 +703,127 @@ export const galleryImages = [
   },
 ];
 
-export const valparaiTourData = {
-  seo: {
-    title: "Valparai Local Tour Packages | Explore the Green Paradise",
-    description:
-      "Book the best Valparai local sightseeing packages. Visit Sholayar Dam, Aliyar, Loam's View Point, and tea plantations with our premium cab services.",
-    keywords:
-      "Valparai tourism, Valparai tour package, Valparai sightseeing, Sholayar dam, Valparai cabs",
-  },
-  places: [
-    {
-      id: "sholayar-dam",
-      title: "Sholayar Dam",
-      description:
-        "One of the highest masonry dams in Asia, offering breathtaking views of the backwaters and lush greenery.",
-      image:
-        "https://valparaicitytravels.com/images/chinnakallar-waterfalls.jpg",
-      tag: "Engineering Marvel",
-    },
-    {
-      id: "loams-view",
-      title: "Loam's View Point",
-      description:
-        "Located at the 9th hairpin bend, it provides a panoramic bird's-eye view of the Aliyar Dam and the mountain ranges.",
-      image:
-        "https://images.unsplash.com/photo-1596395819057-e37f55a8516d?q=80&w=2070&auto=format&fit=crop",
-      tag: "Scenic Beauty",
-    },
-    {
-      id: "aliyar-dam",
-      title: "Aliyar Dam & Park",
-      description:
-        "A popular spot at the foothills of Valparai, perfect for boat rides and family outings amidst the mountains.",
-      image:
-        "https://images.unsplash.com/photo-1623946729571-0f734458f70f?q=80&w=2070&auto=format&fit=crop",
-      tag: "Family Spot",
-    },
-    {
-      id: "tea-estates",
-      title: "Estate Explorations",
-      description:
-        "Walk through sprawling emerald tea plantations and visit historical tea factories to see the process.",
-      image:
-        "https://images.unsplash.com/photo-1597485359714-38600d8bc392?q=80&w=2070&auto=format&fit=crop",
-      tag: "Signature Experience",
-    },
-  ],
-  pricing: [
-    { type: "Sedan (Swift/Etios)", price: "₹3,500", limit: "Max 4 Persons" },
-    { type: "SUV (Innova/Marazzo)", price: "₹5,500", limit: "Max 7 Persons" },
-    { type: "Tempo Traveler", price: "₹8,500", limit: "Max 12 Persons" },
-  ],
-};
-
-export const sightseeingPlaces = [
-  {
-    id: 1,
-    name: "loam's view point",
-    image: "/places/loams.jpg",
-    desc: "situated at the 9th hairpin bend, this spot offers an breathtaking perspective of the aliyar dam reservoir and the majestic mountains surrounding it.",
-    tags: ["scenic", "highway"],
-    category: "viewpoint",
-  },
-  {
-    id: 2,
-    name: "sholayar dam",
-    image: "/places/sholayar.jpg",
-    desc: "one of the tallest dams in india. the drive to sholayar is lined with deep jungle on one side and tea estates on the other. a true engineering marvel.",
-    tags: ["massive", "nature"],
-    category: "landmark",
-  },
-  {
-    id: 3,
-    name: "koolangal river",
-    image: "/places/river.jpg",
-    desc: "a shallow, slow-moving river with smooth pebbles. it is the perfect spot for families to relax and dip their feet in crystal clear mountain water.",
-    tags: ["relaxing", "family"],
-    category: "nature",
-  },
-  {
-    id: 4,
-    name: "balaji temple",
-    image: "/places/temple.jpg",
-    desc: "a privately owned temple situated inside a tea estate. the silence here is profound, and the walk to the temple is incredibly scenic.",
-    tags: ["spiritual", "tea estate"],
-    category: "temple",
-  },
-  {
-    id: 5,
-    name: "nallamudi poonjolai",
-    image: "/places/nallamudi.jpg",
-    desc: "a hidden valley view point. a short walk through tea bushes leads you to a cliff edge overlooking tribal settlements and deep valleys.",
-    tags: ["trek", "valley"],
-    category: "viewpoint",
-  },
-  {
-    id: 6,
-    name: "nirar dam",
-    image: "/places/nirar.jpg",
-    desc: "known for its high waterfall-like overflow during rains. it's part of the hydroelectric project and offers great views of the rainforest.",
-    tags: ["waterfall", "hydro"],
-    category: "landmark",
-  },
-];
-
-export const topslipPackage = {
-  id: "vlp-ts-01",
-  title: "valparai - topslip expedition",
-  slug: "valparai-topslip-tour",
-  duration: "2 nights / 3 days",
-  class: "hp - deluxe",
-  tag: "best seller",
-  price: "on request",
-  seo_description:
-    "premium 3-day exploration covering valparai heights and topslip wilderness. naturalist guided tours including aliyar dam, sholayar, and elephant camps.",
-
-  // High-level itinerary for the timeline component
-  itinerary: [
-    {
-      day: "01",
-      title: "arrival & transition",
-      desc: "pickup from coimbatore or pollachi. scenic drive through the 40 hairpin bends. hotel check-in and leisure evening at valparai town.",
-    },
-    {
-      day: "02",
-      title: "the plateau circuit",
-      desc: "full day exploration: monkey falls, masaniamman temple, sholayar dam, and sunset at nallamudi poonjolai.",
-    },
-    {
-      day: "03",
-      title: "topslip wilderness",
-      desc: "early checkout for topslip sightseeing, elephant camp visit, and forest safari. evening drop at coimbatore airport/railway station.",
-    },
-  ],
-
-  // Detailed content for the bento grid cards
-  destinations: [
-    {
-      name: "monkey falls",
-      category: "waterfalls",
-      tags: ["roadside", "refreshing"],
-      desc: "an excellent roadside stop situated 65km from coimbatore. located on the valparai main road next to the forest department check post.",
-    },
-    {
-      name: "sholayar dam",
-      category: "engineering",
-      tags: ["2nd deepest in asia", "misty"],
-      desc: "situated 30km from valparai, this hydroelectric marvel is a part of the chalakudy river system. entry requires special permission for closer views.",
-    },
-    {
-      name: "nallamudi poonjolai",
-      category: "viewpoint",
-      tags: ["tea estate", "valley view"],
-      desc: "a private estate viewpoint 15km from town. a 1km trek through tea gardens leads to a 1000ft deep valley overlooking anaimudi peak.",
-    },
-    {
-      name: "topslip safari",
-      category: "wildlife",
-      tags: ["elephant camp", "tiger reserve"],
-      desc: "part of the anamalai tiger reserve. famous for elephant camps, trekking trails, and diverse flora/fauna unique to the western ghats.",
-    },
-    {
-      name: "aliyar dam",
-      category: "reservoir",
-      tags: ["boating", "aquarium"],
-      desc: "located at the foothills of valparai. features a beautiful garden, mini theme park, and boating facilities with mountain views on three sides.",
-    },
-    {
-      name: "koolangal river",
-      category: "nature",
-      tags: ["crystal clear", "pebble river"],
-      desc: "a shallow river flowing through sirukundra estate. perfect for a relaxing picnic and wading in pure mountain water.",
-    },
-    {
-      name: "grass hills",
-      category: "national park",
-      tags: ["trekking", "2000m msl"],
-      desc: "a unique montane shola-grassland ecosystem. a protected area that forms the boundary with eravikulam national park in kerala.",
-    },
-    {
-      name: "balaji temple",
-      category: "spiritual",
-      tags: ["high altitude", "serene"],
-      desc: "owned by peria karamalai tea industries. famous for its tirupati-style poojas and the marble floor that stays chilled year-round.",
-    },
-  ],
-
-  // Policy data for the footer of the page
-  policies: {
-    inclusions: [
-      "all taxes included",
-      "naturalist driver-cum-guide",
-      "fuel and parking charges",
-      "pickup and drop-off",
-    ],
-    terms: [
-      "50% advance payment for confirmation",
-      "standard occupancy: 3 adults or 2 adults + 1 child",
-      "75% refund if cancelled 15 days prior",
-      "50% refund if cancelled 8-14 days prior",
-      "no refund within 7 days of arrival",
-    ],
-  },
-};
+//  itinerary: [
+//       {
+//         day: "01",
+//         title: "Arrival Valparai",
+//         activities: [
+//           {
+//             id: 1,
+//             place: "Arrival Valparai",
+//             description: "Pickup transfer to hotel, free day",
+//             placeImage:
+//               "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/45/58/a6/aliyar-dam-reservoir.jpg?w=1200&h=-1&s=1",
+//           },
+//         ],
+//       },
+//       {
+//         day: "02",
+//         title: "Proceed for Aliyar Dam",
+//         activities: [
+//           {
+//             id: 1,
+//             place: "Monkey Falls",
+//             description:
+//               "A natural wonder located on the foothills of the Anamalai range. These refreshing waterfalls are surrounded by evergreen forests and rocky cliffs, making it a perfect spot for a quick dip and nature photography during the ascent to Valparai.",
+//             placeImage: "/images/attractions/monkey-falls.jpg",
+//           },
+//           {
+//             id: 2,
+//             place: "Valparai Sightseeing",
+//             description:
+//               "Explore the 'Seventh Heaven' of the Western Ghats. From sprawling tea estates that look like green carpets to mist-covered valleys, the sightseeing covers the best of high-altitude biodiversity and colonial-era charm.",
+//             placeImage: "/images/attractions/valparai-view.jpg",
+//           },
+//           {
+//             id: 3,
+//             place: "Masaniamman Temple",
+//             description:
+//               "A powerful ancient shrine located in Anaimalai. Dedicated to Goddess Masaniamman, this temple is unique for its reclining deity and is a significant spiritual landmark for travelers seeking blessings before their hill journey.",
+//             placeImage: "/images/attractions/masaniamman.jpg",
+//           },
+//           {
+//             id: 4,
+//             place: "Topslip",
+//             description:
+//               "Located in the Anamalai Tiger Reserve, Topslip is a wildlife enthusiast's paradise. It offers elephant safaris, forest treks, and the chance to spot rare species like the Nilgiri Tahr and lion-tailed macaques in their natural habitat.",
+//             placeImage: "/images/attractions/topslip.jpg",
+//           },
+//           {
+//             id: 5,
+//             place: "Aliyar Dam",
+//             description:
+//               "A magnificent feat of engineering nestled in the Anamalai foothills. Renowned for its well-maintained park, aquarium, and boat rides, it provides a breathtaking 360-degree view of the surrounding mountains reflecting in the blue waters.",
+//             placeImage: "/images/attractions/aliyar-dam.jpg",
+//           },
+//           {
+//             id: 6,
+//             place: "Thirumoorthy Hills",
+//             description:
+//               "A serene spot famous for the Amanalingeswarar Temple located at the foot of the hills. The area combines spirituality with nature, featuring a beautiful dam and a perennial stream that flows through the rugged terrain.",
+//             placeImage: "/images/attractions/thirumoorthy.jpg",
+//           },
+//           {
+//             id: 7,
+//             place: "Thirumurthi Falls",
+//             description:
+//               "A gentle yet captivating waterfall that cascades down the Thirumoorthy Hills. Known for its medicinal properties and calm atmosphere, it is a favorite for families and those looking for a peaceful forest bath.",
+//             placeImage: "/images/attractions/thirumurthi-falls.jpg",
+//           },
+//           {
+//             id: 8,
+//             place: "Amaravathy Dam",
+//             description:
+//               "A major dam in the Indira Gandhi Wildlife Sanctuary. It is famous for its massive reservoir and the steep slopes of the Anamalai Hills that surround it, creating a dramatic landscape perfect for bird watching.",
+//             placeImage: "/images/attractions/amaravathy.jpg",
+//           },
+//           {
+//             id: 9,
+//             place: "Crocodile Park",
+//             description:
+//               "Home to the largest population of crocodiles in South India. This conservation center at Amaravathy offers a safe look at these prehistoric reptiles in a naturalistic setting, educating visitors on wildlife preservation.",
+//             placeImage: "/images/attractions/crocodile-park.jpg",
+//           },
+//           {
+//             id: 10,
+//             place: "Nallamudi Poonjolai",
+//             description:
+//               "One of the most spectacular viewpoints in Valparai. Walk through a private tea estate to reach a cliff edge that offers a stunning view of the Anamalai mountain range and deep tribal valleys below.",
+//             placeImage: "/images/attractions/nallamudi.jpg",
+//           },
+//           {
+//             id: 11,
+//             place: "Koolangal River",
+//             description:
+//               "A crystal-clear, shallow river famous for its smooth pebbles and gentle flow. It’s the best spot in Valparai to relax your feet in cold water while surrounded by lush tea bushes on both sides.",
+//             placeImage: "/images/attractions/koolangal.jpg",
+//           },
+//           {
+//             id: 12,
+//             place: "Palani Murugan Temple",
+//             description:
+//               "One of the six abodes of Lord Murugan. Perched atop a hill accessible by steps or a winch/rope car, this temple is a masterpiece of Dravidian architecture and offers panoramic views of the plains below.",
+//             placeImage: "/images/attractions/palani.jpg",
+//           },
+//           {
+//             id: 13,
+//             place: "Night Halt",
+//             description:
+//               "Relax and rejuvenate in the cool mountain air. Our overnight stays are arranged in premium bungalows or resorts surrounded by tea plantations, allowing you to experience the true silence of the hills.",
+//             placeImage: "/images/attractions/resort.jpg",
+//           },
+//         ],
+//       },
+//       {
+//         day: "03",
+//         title: "Check out hotel",
+//         activities: [
+//           {
+//             id: 1,
+//             place: "Arrival Valparai",
+//             description:
+//               "Evening drop back to Pollachi/Coimbatore Railway Station or Airport.",
+//           },
+//         ],
+//       },
+//     ],

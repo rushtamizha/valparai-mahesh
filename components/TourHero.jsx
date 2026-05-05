@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 
 export default function TourHero({ tour }) {
   return (
-    <section className="relative capitalize h-[75vh] w-full bg-emerald-950 overflow-hidden">
+    <section className="relative w-full overflow-hidden capitalize md:h-[75vh] h-100 bg-emerald-950">
       <div className="absolute inset-0 z-0">
         <Swiper
           modules={[Autoplay, EffectFade]}
