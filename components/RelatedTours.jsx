@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function RelatedTours({ tours }) {
-    console.log(tours)
   return (
     <div className="w-full capitalize">
       <h3 className="text-xs font-black text-emerald-900 uppercase tracking-[0.4em] mb-8 lg:mb-10 flex items-center gap-4">

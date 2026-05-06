@@ -1,15 +1,17 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { tourPackages } from "@/data/data";
-import { Clock, ArrowUpRight, MapPin, Search } from "lucide-react";
+import { Clock, ArrowUpRight, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const TourCard = ({ tour }) => (
   <motion.div 
     layout
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    exit={{ opacity: 0, scale: 0.9 }}
+    transition={{ duration: 0.4 }}
     className="bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 flex flex-col h-full group transition-all duration-500"
   >
     {/* Image Container */}
@@ -33,7 +35,6 @@ const TourCard = ({ tour }) => (
       </h3>
 
       <div className="mb-6 space-y-3">
-        {/* Duration */}
         <div className="flex items-center gap-3 text-slate-600">
           <div className="flex items-center justify-center w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-600">
             <Clock size={16} />
@@ -44,7 +45,6 @@ const TourCard = ({ tour }) => (
           </div>
         </div>
         
-        {/* Starting Point (Optional - extracted from your data) */}
         <div className="flex items-center gap-3 text-slate-600">
           <div className="flex items-center justify-center w-10 h-10 rounded-2xl bg-slate-50 text-slate-400">
             <MapPin size={16} />
@@ -76,40 +76,81 @@ const TourCard = ({ tour }) => (
 );
 
 export default function PackagesPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  // Define categories and count items for each
+  const categories = ["All", "Valparai", "Ooty", "Kodaikanal", "Kerala"];
+  
+  const getCount = (cat) => {
+    if (cat === "All") return tourPackages.length;
+    return tourPackages.filter(p => p.category.toLowerCase() === cat.toLowerCase()).length;
+  };
+
+  const filteredPackages = activeCategory === "All" 
+    ? tourPackages 
+    : tourPackages.filter(p => p.category.toLowerCase() === activeCategory.toLowerCase());
+
   return (
-    <main className="min-h-screen capitalize bg-white py-30">
+    <main className="min-h-screen capitalize bg-white pt-30 pb-30">
       <div className="container px-4 mx-auto">
         
         {/* Page Title Section */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-12">
           <span className="text-emerald-500 font-black text-xs uppercase tracking-[0.3em] mb-4 block">
             Exclusive Itineraries
           </span>
-          <h1 className="text-3xl md:text-7xl font-black text-slate-900 tracking-tighter leading-[0.8] mb-8">
-            All <span className="text-emerald-500 text-outline">Tour</span> <br /> Packages.
+          <h1 className="text-3xl  font-black text-slate-900 tracking-tighter leading-[0.8] mb-8">
+            Explore <span className="text-emerald-500">Nature's</span> <br /> Best.
           </h1>
-          <p className="max-w-xl text-lg font-medium text-slate-500">
-            From the misty peaks of Valparai to the backwaters of Alleppey—explore our complete range of South Indian holiday experiences.
-          </p>
         </div>
 
-        {/* The Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {tourPackages.map((tour) => (
-            <TourCard key={tour.id} tour={tour} />
+        {/* Filter Tabs */}
+        <div className="flex flex-wrap items-center gap-3 mb-12">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-6 py-3 rounded-full text-xs font-black uppercase tracking-widest transition-all flex items-center gap-2 
+                ${activeCategory === cat 
+                  ? "bg-emerald-900 text-white shadow-xl shadow-emerald-900/20 scale-105" 
+                  : "bg-slate-50 text-slate-400 hover:bg-slate-100"}`}
+            >
+              {cat}
+              <span className={`text-[10px] px-2 py-0.5 rounded-full ${activeCategory === cat ? "bg-emerald-500 text-white" : "bg-slate-200 text-slate-500"}`}>
+                {getCount(cat)}
+              </span>
+            </button>
           ))}
         </div>
+
+        {/* Grid Container with Layout Animation */}
+        <motion.div 
+          layout
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <AnimatePresence mode='popLayout'>
+            {filteredPackages.map((tour) => (
+              <TourCard key={tour.id} tour={tour} />
+            ))}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* Empty State */}
+        {filteredPackages.length === 0 && (
+            <div className="py-20 text-center">
+                <p className="font-bold tracking-widest uppercase text-slate-400">No packages found in this category.</p>
+            </div>
+        )}
 
         {/* Need Help Section */}
         <div className="mt-24 bg-emerald-900 rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
             <div className="relative z-10">
-                <h2 className="mb-6 text-3xl font-black tracking-tighter md:text-5xl">Can't find what you're <br/> looking for?</h2>
-                <p className="max-w-lg mx-auto mb-8 font-medium text-emerald-200">We specialize in customized itineraries tailored to your specific needs and budget.</p>
+                <h2 className="mb-6 text-3xl font-black tracking-tighter md:text-5xl">Need a custom <br/> itinerary?</h2>
+                <p className="max-w-lg mx-auto mb-8 font-medium text-emerald-200">Tell us your destination and budget, and we'll craft the perfect journey for you.</p>
                 <Link href="/contact" className="inline-block px-10 py-5 text-xs font-black tracking-widest uppercase transition-colors bg-white rounded-full text-emerald-900 hover:bg-emerald-50">
-                    Plan My Custom Trip
+                    Contact Our Experts
                 </Link>
             </div>
-            {/* Decoration */}
             <div className="absolute w-64 h-64 rounded-full opacity-50 -top-10 -right-10 bg-emerald-800 blur-3xl"></div>
             <div className="absolute w-64 h-64 rounded-full opacity-50 -bottom-10 -left-10 bg-emerald-800 blur-3xl"></div>
         </div>
