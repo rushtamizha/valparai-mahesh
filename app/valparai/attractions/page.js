@@ -8,57 +8,8 @@ import { MapPin, Camera, ArrowUpRight, Compass, Trees } from "lucide-react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { attractions } from "@/data/data";
 
-const attractions = [
-  {
-    title: "Aliyar Dam",
-    category: "Reservoir",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/45/58/a6/aliyar-dam-reservoir.jpg?w=1200&h=-1&s=1",
-    tag: "Foothills"
-  },
-  {
-    title: "Monkey Falls",
-    category: "Waterfalls",
-    image: "/HeroImages/monkey-falls.webp",
-    tag: "Natural Pool"
-  },
-  {
-    title: "Sholayar Dam",
-    category: "Engineering",
-    image: "/HeroImages/sholayar.webp",
-    tag: "Deepest in Asia"
-  },
-  {
-    title: "Topslip Safari",
-    category: "Wildlife",
-    image: "/HeroImages/topslip-safari.webp",
-    tag: "Tiger Reserve"
-  },
-  {
-    title: "Nallamudi Viewpoint",
-    category: "Vistas",
-    image: "/HeroImages/nallamudi.webp",
-    tag: "Valley View"
-  },
-  {
-    title: "Chinnakallar",
-    category: "Nature",
-    image: "/HeroImages/chinnakallar.webp",
-    tag: "Cherrapunji of South"
-  },
-  {
-    title: "Balaji Temple",
-    category: "Spiritual",
-    image: "/HeroImages/balaji.webp",
-    tag: "Serene Heights"
-  },
-  {
-    title: "Koolangal River",
-    category: "Nature",
-    image: "/HeroImages/koolangal.webp",
-    tag: "Pebble Stream"
-  }
-];
 
 export default function AttractionsPage() {
   return (
@@ -137,7 +88,7 @@ export default function AttractionsPage() {
                 <div className="aspect-square rounded-[3.5rem] overflow-hidden bg-slate-100 border border-slate-100">
                    <img 
                     src={item.image} 
-                    className="object-cover w-full h-full transition-all duration-500 grayscale group-hover:grayscale-0" 
+                    className="object-cover w-full h-full transition-all duration-500 " 
                     alt={item.title} 
                    />
                 </div>
@@ -147,9 +98,7 @@ export default function AttractionsPage() {
                     <span className="text-[10px] font-black text-emerald-500 uppercase tracking-widest">{item.category}</span>
                     <h4 className="mt-1 text-xl font-black text-slate-800">{item.title}</h4>
                   </div>
-                  <div className="flex items-center justify-center w-10 h-10 transition-colors rounded-full bg-slate-50 text-slate-400 group-hover:bg-emerald-500 group-hover:text-white">
-                    <ArrowUpRight size={20} />
-                  </div>
+                  
                 </div>
               </motion.div>
             ))}
@@ -158,7 +107,7 @@ export default function AttractionsPage() {
       </section>
 
       {/* 4. CALL TO ACTION SECTION */}
-      <section className="px-6 py-14">
+      <section className="hidden px-6 py-14">
         <div className="container mx-auto">
           <div className="bg-emerald-900 rounded-[4rem] p-12 md:p-24 relative overflow-hidden text-center">
             <Trees className="absolute w-64 h-64 -left-10 -bottom-10 text-white/5" />

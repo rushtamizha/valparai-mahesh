@@ -52,7 +52,7 @@ const VehicleSection = () => {
                   <img 
                     src={vehicle.image} 
                     alt={vehicle.name}
-                    className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110"
+                    className="w-full h-full transition-transform duration-1000 object-fit group-hover:scale-110"
                   />
                   <div className="absolute top-5 left-5 bg-emerald-950/90 backdrop-blur-md px-4 py-1.5 rounded-full shadow-xl">
                     <span className="text-[9px] font-black uppercase tracking-widest text-emerald-400">

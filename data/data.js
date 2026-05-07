@@ -18,10 +18,9 @@ import {
 } from "lucide-react";
 
 export const companyConfig = {
-  name: "Mahesh Tours & Travels",
-  founderImg:
-    "https://lookaside.fbsbx.com/elementpath/media/?media_id=323764547398564&version=1774609332",
-  logo: "https://greentourandtravel.com/uploads/2025/12/1765815094-1763968842-1763446499_3583598_LOGO-GREEN-(1).png",
+  name: "Valparai Mahesh & Travels",
+  founderImg: "founder.jpg",
+  logo: "logo.jpg",
   contact: {
     phone: "+91 9626850192",
     whatsapp: "919626850192", // International format for URL linking
@@ -49,62 +48,62 @@ export const navData = [
   { name: "Home", link: "/", icon: <Home size={16} /> },
   {
     name: "Local Tours",
-    link: "/valparai-local-tour-package",
+    link: "tours/pollachi-valparai-2d-1n",
     icon: <Waves size={16} />,
   },
   {
     name: "Tour Packages",
-    slug: "tour-packages",
+    slug: "packages",
     icon: <Package size={16} />,
     items: [
       {
         name: "Wildlife Tour",
-        slug: "wild-life-tour-packages",
+        slug: "",
         icon: <Camera size={14} />,
       },
       {
         name: "Honeymoon Specials",
-        slug: "honeymoon-tour-packages",
+        slug: "",
         icon: <Heart size={14} />,
       },
       {
         name: "Kerala Tours",
-        slug: "kerala-tour-packages",
+        slug: "",
         icon: <Ship size={14} />,
       },
       {
         name: "Hill Station Tours",
-        slug: "hills-tour-packages",
+        slug: "",
         icon: <MapPin size={14} />,
       },
       {
         name: "South India Tours",
-        slug: "south-india-tour-packages",
+        slug: "",
         icon: <MapPin size={14} />,
       },
       {
         name: "Valparai Specials",
-        slug: "valparai-tour-packages",
+        slug: "",
         icon: <MapPin size={14} />,
       },
       {
         name: "Topslip Tours",
-        slug: "topslip-tour-packages",
+        slug: "",
         icon: <Camera size={14} />,
       },
       {
         name: "Athirapally Falls",
-        slug: "athirapally-tour-packages",
+        slug: "",
         icon: <Waves size={14} />,
       },
       {
         name: "Student Groups",
-        slug: "students-tour-packages",
+        slug: "",
         icon: <Users size={14} />,
       },
       {
         name: "Corporate Outings",
-        slug: "corporate-tour-packages",
+        slug: "",
         icon: <Briefcase size={14} />,
       },
     ],
@@ -174,7 +173,7 @@ export const tourPackages = [
     id: 1,
     title: "Pollachi Valparai Tour Package",
     slug: "pollachi-valparai-2d-1n",
-    duration: "1 Night 2 Days",
+    duration: "2 Days 1 Night",
     basePrice: "On Request",
     category: "Valparai",
     tourFrom: "Pollachi / Coimbatore",
@@ -191,7 +190,7 @@ export const tourPackages = [
     id: 2,
     title: "Pollachi Topslip Parambikulam Valparai",
     slug: "pollachi-topslip-parambikulam-valparai-3d-2n",
-    duration: "2 Nights 3 Days",
+    duration: "3 Days 2 Night ",
     basePrice: "On Request",
     category: "Valparai",
     tourFrom: "Pollachi",
@@ -208,7 +207,7 @@ export const tourPackages = [
     id: 3,
     title: "Pollachi Valparai Athirapally Waterfalls",
     slug: "pollachi-valparai-athirapally-3d-2n",
-    duration: "2 Nights 3 Days",
+    duration: "3 Days 2 Night",
     basePrice: "On Request",
     category: "Valparai",
     tourFrom: "Pollachi / Valparai",
@@ -225,7 +224,7 @@ export const tourPackages = [
     id: 4,
     title: "Topslip Parambikulam Valparai Athirapally",
     slug: "topslip-parambikulam-valparai-athirapally-4d-3n",
-    duration: "3 Nights 4 Days",
+    duration: "4 Days 3 Night",
     basePrice: "On Request",
     category: "Valparai",
     tourFrom: "Coimbatore / Pollachi",
@@ -242,7 +241,7 @@ export const tourPackages = [
     id: 5,
     title: "Coimbatore Isha Marudamalai Pollachi Valparai",
     slug: "coimbatore-isha-valparai-5d-4n",
-    duration: "4 Nights 5 Days",
+    duration: "5 Days 4 Night",
     basePrice: "On Request",
     category: "Valparai",
     tourFrom: "Coimbatore",
@@ -261,7 +260,7 @@ export const tourPackages = [
     id: 6,
     title: "Coonoor Ooty Pykara Mudumalai",
     slug: "coimbatore-ooty-mudumalai-3d-2n",
-    duration: "2 Nights 3 Days",
+    duration: "3 Days 2 Night",
     basePrice: "On Request",
     category: "Ooty",
     tourFrom: "Coimbatore",
@@ -278,7 +277,7 @@ export const tourPackages = [
     id: 7,
     title: "Coonoor Ooty Pykara Masinagudi",
     slug: "coimbatore-ooty-masinagudi-4d-3n",
-    duration: "3 Nights 4 Days",
+    duration: "4 Days 3 Night",
     basePrice: "On Request",
     category: "Ooty",
     tourFrom: "Coimbatore",
@@ -295,7 +294,7 @@ export const tourPackages = [
     id: 8,
     title: "Grand Kodaikanal Ooty Coonoor Mudumalai",
     slug: "coimbatore-kodai-ooty-mudumalai-6d-5n",
-    duration: "5 Nights 6 Days",
+    duration: "6 Days 5 Night",
     basePrice: "On Request",
     category: "Ooty",
     tourFrom: "Coimbatore",
@@ -314,7 +313,7 @@ export const tourPackages = [
     id: 9,
     title: "Kodaikanal Local & Sightseeing",
     slug: "kodai-road-kodaikanal-3d-2n",
-    duration: "2 Nights 3 Days",
+    duration: " 3 Days 2 Nights",
     basePrice: "On Request",
     category: "Kodaikanal",
     tourFrom: "Kodai Road / Madurai",
@@ -331,7 +330,7 @@ export const tourPackages = [
     id: 10,
     title: "Coimbatore Kodaikanal Ooty Coonoor Mudumalai",
     slug: "coimbatore-kodaikanal-ooty-mudumalai-6d-5n",
-    duration: "5 Nights 6 Days",
+    duration: " 6 Days 5 Nights",
     basePrice: "On Request",
     category: "Kodaikanal",
     tourFrom: "Coimbatore",
@@ -350,7 +349,7 @@ export const tourPackages = [
     id: 11,
     title: "Kanthaloor Marayoor Munnar Tour",
     slug: "coimbatore-kanthaloor-marayoor-munnar-3d-2n",
-    duration: "2 Nights 3 Days",
+    duration: "3 Days 2 Night",
     basePrice: "On Request",
     category: "Kerala",
     tourFrom: "Udumalpet / Coimbatore",
@@ -367,15 +366,15 @@ export const tourPackages = [
     id: 12,
     title: "Cochin Munnar Kanthaloor Marayoor",
     slug: "cochin-munnar-kanthaloor-marayoor-4d-3n",
-    duration: "3 Nights 4 Days",
+    duration: "4 Days 3 Night",
     basePrice: "On Request",
     category: "Kerala",
     tourFrom: "Cochin",
     description: "Starting from Cochin, this package covers the sprawling tea estates of Munnar and the serene natural beauty of the Marayoor region.",
     termsConditions: ["Standard Kerala T&C apply"],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
-    includes: ["Private Cab", "Accomodation", "Breakfast/Dinner", "Driver Beta", "Toll/Parking", "Interstate Permit"],
-    excludes: ["Entry tickets", "Personal Expenses", "Lunch"],
+    includes: ["Private Cab for pick up till drop", "Accomodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
+    excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
     image: "/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor1.jpg",
     places: ["/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor2.jpg", "/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor3.jpg","/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor1.jpg","/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor4.jpg"],
     tag: "Top Choice",
@@ -384,32 +383,32 @@ export const tourPackages = [
     id: 13,
     title: "Wonders of Kerala Coimbatore Departure",
     slug: "coimbatore-kerala-wonders-5d-4n",
-    duration: "4 Nights 5 Days",
+    duration: "5 Days 4 Nights",
     basePrice: "On Request",
     category: "Kerala",
     tourFrom: "Coimbatore",
     description: "An extensive 5-day tour from Coimbatore covering the best of Kerala's mountain landscapes and cultural highlights.",
     termsConditions: ["Standard Kerala T&C apply"],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
-    includes: ["Private Cab", "Accomodation", "Breakfast/Dinner", "Driver Beta", "Toll/Parking", "Interstate Permit"],
-    excludes: ["Entry tickets", "Personal Expenses", "Lunch"],
+    includes: ["Private Cab for pick up till drop", "Accomodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
+    excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
     image: "/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg",
-    places: ["c/public/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg", "c/public/coimbatore-kerala-wonders/coimbatore-kerala-wonders2.avif","c/public/coimbatore-kerala-wonders/coimbatore-kerala-wonders3.avif","c/public/coimbatore-kerala-wonders/coimbatore-kerala-wonders4.jpg"],
+    places: ["/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg", "/coimbatore-kerala-wonders/coimbatore-kerala-wonders2.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders3.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders4.jpg"],
     tag: "Adventure",
   },
   {
     id: 14,
     title: "Cochin Alleppey Houseboat Munnar",
     slug: "cochin-alleppey-houseboat-munnar-5d-4n",
-    duration: "4 Nights 5 Days",
+    duration: "5 Days  4 Nights",
     basePrice: "On Request",
     category: "Kerala",
     tourFrom: "Cochin",
     description: "Experience the quintessential Kerala: A romantic night in an Alleppey Houseboat followed by the rolling tea hills of Munnar.",
     termsConditions: ["The rates are inclusive of all taxes", "All the bookings must be confirmed with a 50% advance payment."],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
-    includes: ["1 Night Houseboat Stay", "3 Nights Hotel Accommodation", "All Meals in Houseboat", "Private Cab", "Toll & Parking"],
-    excludes: ["Entry tickets", "Lunch in Hotel"],
+    includes: ["Private Cab for pick up till drop", "Accomodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
+    excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
     image: "/alleppey-munnar/alleppey-munnar1.jpg",
     places: ["/alleppey-munnar/alleppey-munnar1.jpg", "/alleppey-munnar/alleppey-munnar2.jpg", "/alleppey-munnar/alleppey-munnar3.jpg"],
     tag: "Honeymoon Special",
@@ -418,15 +417,15 @@ export const tourPackages = [
     id: 15,
     title: "Cochin Alleppey Munnar Thekkady",
     slug: "cochin-alleppey-munnar-thekkady-6d-5n",
-    duration: "5 Nights 6 Days",
+    duration: " 6 Days 5 Nights",
     basePrice: "On Request",
     category: "Kerala",
     tourFrom: "Cochin",
     description: "A complete Kerala experience including the backwaters, the tea gardens of Munnar, and the spice plantations of Thekkady.",
     termsConditions: ["Standard Kerala T&C apply"],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
-    includes: ["Private Cab", "Houseboat Night", "Comfortable Hotel Stay", "Breakfast/Dinner", "Interstate Permit"],
-    excludes: ["Boating in Thekkady", "Entry fees"],
+     includes: ["Private Cab for pick up till drop", "Accomodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
+    excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
     image: "/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg",
     places: ["/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg", "/coimbatore-kerala-wonders/coimbatore-kerala-wonders2.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders3.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders4.jpg"],
     tag: "Family Special",
@@ -435,15 +434,15 @@ export const tourPackages = [
     id: 16,
     title: "Cochin To Wayanad Trivandrum Grand Tour",
     slug: "kerala-panorama-10d-9n",
-    duration: "9 Nights 10 Days",
+    duration: " 10 Days  9 Nights",
     basePrice: "On Request",
     category: "Kerala",
     tourFrom: "Cochin",
     description: "The most comprehensive Kerala experience. From Wayanad in the north to the backwaters of Alleppey and the southern beaches of Kovalam.",
     termsConditions: ["Standard Kerala T&C apply"],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
-    includes: ["Full Trip Private Cab", "Hotel & Houseboat Stays", "Breakfast/Dinner", "All Permits", "Driver Beta"],
-    excludes: ["Personal Expenses", "Entry Tickets"],
+   includes: ["Private Cab for pick up till drop", "Accomodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
+    excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
     image: "/kerala-panorama/kerala-panorama2.webp",
     places: ["/kerala-panorama/kerala-panorama2.webp", "/kerala-panorama/kerala-panorama3.jpg", "/kerala-panorama/kerala-panorama4.webp", "/kerala-panorama/kerala-panorama5.webp", "/kerala-panorama/kerala-panorama6.jpg"],
     tag: "Signature Journey",
@@ -454,8 +453,7 @@ export const fleet = [
   {
     id: 1,
     name: "Premium Innova Crysta",
-    image:
-      "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Innova-Crysta/9608/1755846139274/front-left-side-47.jpg", // Replace with your actual paths
+    image: "/vehicles/toyota-innova-crysta.webp",
     capacity: "6+1 Seater",
     bags: "4 Luggage",
     type: "Luxury MUV",
@@ -464,8 +462,7 @@ export const fleet = [
   {
     id: 2,
     name: "Luxury Tempo Traveller",
-    image:
-      "https://www.hindustanbesttravels.com/wp-content/uploads/2025/05/Things-You-Didnt-Know-About-Tempo-Traveller-Trips-in-India.webp",
+    image: "/vehicles/12-seater-tempo-traveller.jpg",
     capacity: "12 to 17 Seater",
     bags: "10+ Luggage",
     type: "Group Travel",
@@ -473,9 +470,8 @@ export const fleet = [
   },
   {
     id: 3,
-    name: "Swift Dzire / Etios",
-    image:
-      "https://images.autox.com/uploads/cars/2024/11/maruti-suzuki-dzire-500x261.jpg",
+    name: "Swift Dzire",
+    image: "/vehicles/dzire.jpg",
     capacity: "4+1 Seater",
     bags: "2 Luggage",
     type: "Premium Sedan",
@@ -483,53 +479,240 @@ export const fleet = [
   },
   {
     id: 4,
-    name: "Off-Road Jeep",
-    image:
-      "https://images.unsplash.com/photo-1671967664667-5c21b344dec4?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amVlcCUyMG9mZnJvYWR8ZW58MHx8MHx8fDA%3D",
-    capacity: "4-6 Seater",
-    bags: "Limited",
-    type: "Safari Special",
-    features: ["4x4", "Open Top", "Naturalist Driver"],
+    name: "Maruti Ertiga",
+    image: "/vehicles/Ertiga.avif",
+    capacity: "6+1 Seater",
+    bags: "2 Luggage",
+    type: "Comfort MUV",
+    features: ["AC", "Music System", "Heater"],
+  },
+  {
+    id: 5,
+    name: "Toyota Innova",
+    image: "/vehicles/innova.jpg",
+    capacity: "6+1 Seater",
+    bags: "4 Luggage",
+    type: "Luxury MUV",
+    features: ["AC", "Heater", "Carrier"],
+  },
+  {
+    id: 6,
+    name: "Coach Van (24 Seater)",
+    image: "/vehicles/coach.jpg",
+    capacity: "24 Seater",
+    bags: "20+ Luggage",
+    type: "Large Group Coach",
+    features: ["AC", "Pushback Seats", "Large Storage"],
+  },
+  {
+    id: 7,
+    name: "Toyota Etios",
+    image: "/vehicles/Etios.avif",
+    capacity: "4+1 Seater",
+    bags: "2 Luggage",
+    type: "Premium Sedan",
+    features: ["AC", "Compact", "Heater"],
   },
 ];
 
 export const galleryImages = [
   {
     id: 1,
-    src: "https://www.valparaimountterrain.com/wp-content/uploads/2025/08/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand-1024x682.webp",
+    src: "/galleryImages/customer1.jpg",
     title: "Tea Estates",
     category: "Nature",
   },
   {
     id: 2,
-    src: "https://www.valparaimountterrain.com/wp-content/uploads/2025/08/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand-1024x682.webp",
+    src: "/galleryImages/customer2.jpg",
     title: "Wildlife Safari",
     category: "Adventure",
   },
   {
     id: 3,
-    src: "https://www.valparaimountterrain.com/wp-content/uploads/2025/08/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand-1024x682.webp",
+    src: "/galleryImages/customer3.jpg",
     title: "Athirapally Falls",
     category: "Waterfalls",
   },
   {
     id: 4,
-    src: "https://www.valparaimountterrain.com/wp-content/uploads/2025/08/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand-1024x682.webp",
+    src: "/galleryImages/customer4.jpg",
     title: "Topslip Greenery",
     category: "Forest",
   },
+];
+
+export const attractions = [
+  // --- POLLACHI & VALPARAI SECTOR ---
+  {
+    title: "Aliyar Dam",
+    category: "Reservoir",
+    image: "/attractions/Aliyar Dam.jpg",
+    tag: "Foothills"
+  },
+  {
+    title: "Monkey Falls",
+    category: "Waterfalls",
+    image: "/attractions/Monkey Falls.avif",
+    tag: "Natural Pool"
+  },
+  {
+    title: "Sholayar Dam",
+    category: "Engineering",
+    image: "/attractions/caption.jpg",
+    tag: "Deepest in Asia"
+  },
+  {
+    title: "Topslip Safari",
+    category: "Wildlife",
+    image: "/attractions/one-day-coimbatore-to-topslip-sightseeing-tour-package-by-car-elephant-safari-at-topslip.webp",
+    tag: "Tiger Reserve"
+  },
+  {
+    title: "Parambikulam",
+    category: "Nature",
+    image: "/attractions/we-are-a-tour-operator.jpg",
+    tag: "Eco-Tourism"
+  },
+
+  // --- OOTY & COONOOR SECTOR ---
+  {
+    title: "Ooty Botanical Garden",
+    category: "Flora",
+    image: "/ooty-masinagudi/ooty-masinagudi1.jpg",
+    tag: "Heritage Park"
+  },
+  {
+    title: "Pykara Lake",
+    category: "Boating",
+    image: "/attractions/fb-img-1536802621189.jpg",
+    tag: "Scenic Beauty"
+  },
+  {
+    title: "Mudumalai / Masinagudi",
+    category: "Wildlife",
+    image: "/ooty-masinagudi/ooty-masinagudi3.jpg",
+    tag: "Jungle Safari"
+  },
+
+  // --- KODAIKANAL SECTOR ---
+  {
+    title: "Kodai Lake",
+    category: "Leisure",
+    image: "/attractions/a7b7107e-c5da-4362-992a-edec53c68948.jpg",
+    tag: "Star Shaped Lake"
+  },
+  {
+    title: "Pillar Rocks",
+    category: "Nature",
+    image: "/attractions/pillar-rocks.jpg",
+    tag: "Kodai Landmark"
+  },
+
+  // --- KERALA (MUNNAR, ATHIRAPALLY, ALLEPPEY) ---
+  {
+    title: "Athirapally Falls",
+    category: "Waterfalls",
+    image: "/attractions/athirapally-falls-in.jpg",
+    tag: "Niagara of India"
+  },
+  {
+    title: "Munnar Tea Gardens",
+    category: "Vistas",
+    image: "/attractions/tea-gardens.jpg",
+    tag: "Rolling Hills"
+  },
+  {
+    title: "Alleppey Houseboat",
+    category: "Backwaters",
+    image: "/cochin-alleppey-munnar-thekkady/cochin-alleppey-munnar-thekkady1.jpg",
+    tag: "Floating Luxury"
+  },
+  {
+    title: "Thekkady",
+    category: "Spices",
+    image: "/cochin-alleppey-munnar-thekkady/cochin-alleppey-munnar-thekkady4.jpg",
+    tag: "Periyar Lake"
+  },
+  {
+    title: "Kanthaloor",
+    category: "Agriculture",
+    image: "/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor4.jpg",
+    tag: "Fruit Orchards"
+  },
+
+  // --- SPIRITUAL & COIMBATORE ---
+  {
+    title: "Adiyogi Isha",
+    category: "Spiritual",
+    image: "/coimbatore-isha-valparai/coimbatore-isha-valparai5.webp",
+    tag: "Largest Bust"
+  }
+];
+export const roomsData = [
+  {
+    id: 1,
+    name: "6 Pax Family Dorm",
+    price: "3800",
+    folder: "6 pax family Dorm",
+    capacity: "6 People",
+    features: ["Bunk Beds", "Shared Area", "Spacious"],
+    images: ["/rooms/6 pax family Dorm/9dc0d984-044e-4d4e-928c-883fbeb43329.jpg"] // Assuming these names inside the folder
+  },
+  {
+    id: 2,
+    name: "Deluxe Family Suite with Balcony",
+    price: "3000",
+    folder: "Deluxe Family suite Room with Balcony",
+    capacity: "4 People",
+    features: ["Private Balcony", "King Bed", "Premium View"],
+    images: ["/rooms/Deluxe Family suite Room with Balcony/3e5e9c4f-8b74-4883-9421-d516a4570155.jpg", "/rooms/Deluxe Family suite Room with Balcony/06841c00-2816-4895-ab83-9cd1ad1461db.jpg", "/rooms/Deluxe Family suite Room with Balcony/f0e847b7-78cd-4712-8465-405bb3fb5bb8.jpg"]
+  },
+  {
+    id: 3,
+    name: "Deluxe Room (Tea Estate View)",
+    price: "3500",
+    folder: "Deluxe Room with Tea Estate view",
+    capacity: "2 People",
+    features: ["Garden View", "Tea Estate Access", "Quiet"],
+    images: ["/rooms/Deluxe Room with Tea Estate view/35c21a24-3184-4e0d-a72d-07055e1d48ba.jpg", "/rooms/Deluxe Room with Tea Estate view/94b976ee-4471-4721-846f-6e6c36e56331.jpg", "/rooms/Deluxe Room with Tea Estate view/3956b01a-8bf9-4344-a431-b1a257e90580.jpg","/rooms/Deluxe Room with Tea Estate view/cc3560a0-a694-471f-bdd6-d76a8c193f21.jpg","/rooms/Deluxe Room with Tea Estate view/e46d4d38-321d-4c4c-8885-c75166e6156b.jpg"]
+  },
+  {
+    id: 4,
+    name: "Standard Double Room",
+    price: "1500",
+    folder: "Standard Double Room",
+    capacity: "2 People",
+    features: ["Budget Friendly", "Attached Bath", "Cozy"],
+    images: ["/rooms/Standard Double Room/9fa0398b-c340-40b7-9c2d-6a3ae7a7a80d.jpg", ]
+  },
   {
     id: 5,
-    src: "https://www.valparaimountterrain.com/wp-content/uploads/2025/08/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand-1024x682.webp",
-    title: "Luxury Transit",
-    category: "Fleet",
+    name: "Standard Family Suite",
+    price: "2500",
+    folder: "Standard Family Suite Room",
+    capacity: "4 People",
+    features: ["Family Layout", "Storage", "Clean"],
+    images: ["/rooms/Standard Family Suite Room/253a4e61-f6a5-4511-97f2-b7c990657c7e.jpg",]
   },
   {
     id: 6,
-    src: "https://www.valparaimountterrain.com/wp-content/uploads/2025/08/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand-1024x682.webp",
-    title: "Misty Mornings",
-    category: "Nature",
+    name: "Standard Suite Room",
+    price: "2500",
+    folder: "Standard Suite Room",
+    capacity: "2-3 People",
+    features: ["Work Desk", "Sofa", "Elegant"],
+    images: ["/rooms/Standard Suite Room/609fe975-9b69-42c1-9d6a-27056259ecae.jpg",]
   },
+  {
+    id: 7,
+    name: "Super Deluxe Room",
+    price: "4500",
+    folder: "Super Deluxe Room",
+    capacity: "2 People",
+    features: ["Luxury Decor", "Best View", "King Size Bed"],
+    images: ["/rooms/Super Deluxe Room/41c143dc-bfb6-455b-961f-b7ade2ebbf31.jpg", "/rooms/Super Deluxe Room/ab007e12-875c-4bbf-b7a6-422d0285bac0.jpg", ]
+  }
 ];
 
 //  itinerary: [

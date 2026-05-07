@@ -49,7 +49,7 @@ const Navbar = () => {
               {companyConfig.name.split(' ').slice(0, 2).join(' ')} 
               <span className="ml-1 text-emerald-500">{companyConfig.name.split(' ').slice(2).join(' ')}</span>
             </h1>
-            <p className="text-[8px] font-bold tracking-[0.3em] text-gray-500 uppercase">Premium Travel Services</p>
+            <p className="text-[8px] font-bold tracking-[0.3em] text-gray-500 uppercase">Explore with happiness</p>
           </div>
         </Link>
 

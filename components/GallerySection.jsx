@@ -24,7 +24,7 @@ const GallerySection = () => {
               Visual Journals
             </span>
             <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
-              Capture The <span className="text-emerald-500">Wild</span>
+              Capture The <span className="text-emerald-500">MOMENTS</span>
             </h2>
           </div>
           <div className="flex items-center gap-4 pb-2">
@@ -52,7 +52,7 @@ const GallerySection = () => {
               <SwiperSlide key={img.id}>
                 <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden shadow-xl">
                   <img src={img.src} alt={img.title} className="object-cover w-full h-full" />
-                  <div className="absolute inset-0 flex items-end p-8 bg-gradient-to-t from-emerald-950/80 to-transparent">
+                  <div className="absolute inset-0 flex items-end hidden p-8 bg-gradient-to-t from-emerald-950/80 to-transparent">
                     <p className="text-sm font-black tracking-widest text-white uppercase">{img.title}</p>
                   </div>
                 </div>
@@ -83,16 +83,6 @@ const GallerySection = () => {
             img={galleryImages[3]} 
             className="col-span-4 row-span-1" 
             onClick={() => setSelectedImg(galleryImages[3])} 
-          />
-          <GalleryItem 
-            img={galleryImages[4]} 
-            className="col-span-4 row-span-1" 
-            onClick={() => setSelectedImg(galleryImages[4])} 
-          />
-          <GalleryItem 
-            img={galleryImages[5]} 
-            className="col-span-4 row-span-1" 
-            onClick={() => setSelectedImg(galleryImages[5])} 
           />
         </div>
       </div>

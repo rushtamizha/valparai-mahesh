@@ -24,11 +24,24 @@ import {
   Info,
   AlertCircle,
   ChevronDown,
+  Package,
+  Baby,
 } from "lucide-react";
 import { tourPackages, companyConfig } from "@/data/data";
 import TourHero from "@/components/TourHero";
 import RelatedTours from "@/components/RelatedTours";
 import TourImageGallery from "@/components/TourImageGallery";
+import BookingForm from "@/components/BookingForm";
+
+const Input = ({ icon, ...props }) => (
+  <div className="relative">
+    <div className="absolute left-4 top-4 text-emerald-500">{icon}</div>
+    <input
+      {...props}
+      className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500 text-emerald-900 placeholder:text-slate-400"
+    />
+  </div>
+);
 
 const TourDetails = ({ params }) => {
   const { slug } = React.use(params);
@@ -43,6 +56,36 @@ const TourDetails = ({ params }) => {
         package not found
       </div>
     );
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    date: "",
+    adults: "2",
+    children: "0",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleWhatsAppSubmit = (e) => {
+    e.preventDefault();
+
+    const message =
+      `*NEW BOOKING ENQUIRY*%0A` +
+      `--------------------------%0A` +
+      `*Package Name:* ${tour.title}%0A` +
+      `*Name:* ${formData.fullName}%0A` +
+      `*Phone:* ${formData.phone}%0A` +
+      `*Date:* ${formData.date}%0A` +
+      `*Adults:* ${formData.adults}%0A` +
+      `*Children:* ${formData.children}%0A` +
+      `--------------------------`;
+
+    const whatsappUrl = `https://wa.me/${companyConfig.phone.replace(/[^0-9]/g, "")}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   const otherTours = tourPackages.filter((p) => p.slug !== slug);
 
@@ -81,8 +124,7 @@ const TourDetails = ({ params }) => {
         </div>
       </section>
 
-      <TourImageGallery  images={tour.places} 
-      title={tour.title} />
+      <TourImageGallery images={tour.places} title={tour.title} />
 
       {/* 2. MAIN CONTENT GRID */}
       <section className="py-10">
@@ -260,14 +302,15 @@ const TourDetails = ({ params }) => {
         <div className="container px-6 mx-auto">
           <div className="max-w-6xl mx-auto">
             <div className="grid items-center gap-16 lg:grid-cols-2">
+              {/* Left Side: Text and Price Tiers */}
               <div>
-                <h2 className="mb-8 text-3xl font-black leading-none tracking-tighter text-white capitalize ">
-                  ready to 
-                  <span className="text-emerald-400"> book?</span>
+                <h2 className="mb-8 text-3xl font-black leading-none tracking-tighter text-white capitalize md:text-5xl">
+                  ready to <br />
+                  <span className="text-emerald-400"> book {tour.title}?</span>
                 </h2>
 
-                <div className="grid hidden grid-cols-2 gap-4 mb-10">
-                  {tour.priceTiers.map((tier, i) => (
+                <div className="grid grid-cols-2 gap-4 mb-10">
+                  {tour.priceTiers?.map((tier, i) => (
                     <div
                       key={i}
                       className="p-6 border rounded-3xl bg-white/5 border-white/10 backdrop-blur-sm"
@@ -275,7 +318,6 @@ const TourDetails = ({ params }) => {
                       <p className="text-[10px] font-black text-emerald-400 uppercase tracking-widest">
                         {tier.members}
                       </p>
-
                       <p className="text-2xl font-black text-white">
                         ₹{tier.price}
                       </p>
@@ -284,43 +326,99 @@ const TourDetails = ({ params }) => {
                 </div>
               </div>
 
+              {/* Right Side: Booking Form */}
               <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl">
-                <form className="space-y-4">
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <Input
-                      icon={<User />}
-                      type="text"
-                      placeholder="full name"
+                <form onSubmit={handleWhatsAppSubmit} className="space-y-4">
+                  {/* Package Name (Read Only Visual) */}
+                  <div className="relative opacity-80">
+                    <Package
+                      className="absolute left-4 top-4 text-emerald-500"
+                      size={18}
                     />
-
-                    <Input
-                      icon={<Phone />}
-                      type="tel"
-                      placeholder="phone number"
+                    <input
+                      readOnly
+                      value={tour.title}
+                      className="w-full py-4 pl-12 pr-4 text-sm font-black uppercase border-none outline-none bg-emerald-50 rounded-2xl text-emerald-800"
                     />
                   </div>
 
                   <div className="grid gap-4 md:grid-cols-2">
-                    <Input icon={<Calendar />} type="date" />
+                    <Input
+                      icon={<User size={18} />}
+                      type="text"
+                      name="fullName"
+                      placeholder="name of booking"
+                      required
+                      onChange={handleChange}
+                    />
 
+                    <Input
+                      icon={<Phone size={18} />}
+                      type="tel"
+                      name="phone"
+                      placeholder="phone number"
+                      required
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <Input
+                      icon={<Calendar size={18} />}
+                      type="date"
+                      name="date"
+                      required
+                      onChange={handleChange}
+                    />
+
+                    {/* Adults Selector */}
                     <div className="relative">
                       <User
                         className="absolute left-4 top-4 text-emerald-500"
                         size={18}
                       />
-
-                      <select className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none appearance-none text-emerald-700 bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500">
-                        {tour.priceTiers.map((t, idx) => (
-                          <option key={idx} value={t.members}>
-                            {t.members}
+                      <select
+                        name="adults"
+                        onChange={handleChange}
+                        className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none appearance-none text-emerald-700 bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500"
+                      >
+                        <option value="" disabled>
+                          Number of Adults
+                        </option>
+                        {[1, 2, 3, 4, 5, 6, 8, 10].map((num) => (
+                          <option key={num} value={num}>
+                            {num} Adults
                           </option>
                         ))}
                       </select>
                     </div>
                   </div>
 
-                  <button className="w-full py-5 bg-emerald-900 text-white rounded-full font-black text-xs uppercase tracking-[0.3em] hover:bg-emerald-700 transition-all flex items-center justify-center gap-3">
-                    submit enquiry <Send size={16} />
+                  {/* Children Selector */}
+                  <div className="relative">
+                    <Baby
+                      className="absolute left-4 top-4 text-emerald-500"
+                      size={18}
+                    />
+                    <select
+                      name="children"
+                      onChange={handleChange}
+                      className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none appearance-none text-emerald-700 bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500"
+                    >
+                      <option value="0">0 Child's</option>
+                      {[1, 2, 3, 4, 5].map((num) => (
+                        <option key={num} value={num}>
+                          {num} Child's
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full py-5 bg-emerald-900 text-white rounded-full font-black text-xs uppercase tracking-[0.3em] hover:bg-emerald-700 transition-all flex items-center justify-center gap-3 shadow-xl shadow-emerald-900/20"
+                  >
+                    Book Now <Send size={16} />
                   </button>
                 </form>
 
@@ -328,7 +426,6 @@ const TourDetails = ({ params }) => {
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                     direct contact
                   </p>
-
                   <p className="mt-1 text-lg font-black text-emerald-900">
                     {companyConfig.phone}
                   </p>
@@ -362,23 +459,10 @@ const InfoBox = ({ icon, label, value }) => (
   </div>
 );
 
-const Input = ({ icon, ...props }) => (
-  <div className="relative">
-    <div className="absolute left-4 top-4 text-emerald-500">
-      {React.cloneElement(icon, { size: 18 })}
-    </div>
 
-    <input
-      {...props}
-      className="w-full py-4 pl-12 pr-4 text-sm font-bold capitalize border-none outline-none text- bg-slate-50 rounded-2xl focus:ring-2 focus:ring-emerald-500 text-emerald-700"
-    />
-  </div>
-);
 
 const InclusionCard = ({ title, data, icon, isEmerald }) => (
-  <div
-    className={`p-4 rounded-[2rem] `}
-  >
+  <div className={`p-4 rounded-[2rem] `}>
     <h4
       className={`font-black uppercase mb-6 flex items-center gap-2 ${isEmerald ? "text-emerald-900" : "text-red-800"}`}
     >

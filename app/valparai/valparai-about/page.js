@@ -33,7 +33,7 @@ export default function AboutValparai() {
       
       {/* 1. HERO SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-emerald-950">
-              <div className="absolute inset-0 opacity-40">
+              <div className="absolute inset-0 opacity-40 ">
                  <img src="/HeroImages/valparai-tour-package.webp" className="object-cover w-full h-full" alt="Attractions" />
               </div>
               <div className="container relative z-10 px-6 text-center">
@@ -91,8 +91,8 @@ export default function AboutValparai() {
         <div className="container px-6 mx-auto">
           <div className="grid items-center gap-20 lg:grid-cols-2">
             <div className="relative group">
-              <div className="rounded-[4rem] overflow-hidden aspect-[4/5]">
-                <img src="https://valparai.com/wp-content/uploads/2026/02/sholayar_dam_senguthuparai-1-536x1024.jpg" className="object-cover w-full h-full transition-all duration-700 grayscale group-hover:grayscale-0" alt="valparai history" />
+              <div className="overflow-hidden aspect-[4/5]">
+                <img src="/galleryImages/gvh.jpg" className="object-contain w-full h-full transition-all duration-700 rounded-xl " alt="valparai history" />
               </div>
             </div>
 
@@ -126,9 +126,6 @@ export default function AboutValparai() {
             <h2 className="text-4xl font-black tracking-tighter text-white capitalize md:text-7xl">
               visual <span className="text-emerald-500">gallery.</span>
             </h2>
-            <button className="items-center hidden gap-2 text-sm font-bold capitalize md:flex text-emerald-400">
-              view all <ArrowRight size={18}/>
-            </button>
           </div>
 
           <Swiper
@@ -142,10 +139,10 @@ export default function AboutValparai() {
             }}
             className="gallery-swiper !pb-16"
           >
-            {[1, 2, 3, 4, 5].map((i) => (
+            {[1, 2, 3,].map((i) => (
               <SwiperSlide key={i}>
                 <div className="aspect-[3/4] rounded-[3rem] overflow-hidden border border-white/10 relative group">
-                   <img src={`/images/gallery-${i}.jpg`} className="object-cover w-full h-full transition-all duration-500 grayscale group-hover:grayscale-0" />
+                   <img src={`/valparai/valparai${i}.jpg`} className="object-cover w-full h-full transition-all duration-500 grayscale group-hover:grayscale-0" />
                    <div className="absolute inset-0 flex items-end p-8 transition-opacity opacity-0 bg-gradient-to-t from-emerald-950/80 to-transparent group-hover:opacity-100">
                       <p className="text-lg font-black text-white capitalize">valparai captures.</p>
                    </div>
