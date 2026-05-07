@@ -81,6 +81,36 @@ const Footer = () => {
             <Link href="/terms" className="hover:text-emerald-400">terms</Link>
           </div>
         </div>
+
+        {/* Developed By Badge */}
+<div className="flex justify-center w-full mt-12 lg:justify-end">
+  <Link 
+    href="https://wepzite.in" 
+    target="_blank"
+    className="group relative flex items-center gap-3 px-5 py-2.5 bg-emerald-950/50 backdrop-blur-md border border-white/10 rounded-full transition-all duration-500 hover:border-emerald-400/50 hover:shadow-[0_0_20px_rgba(52,211,153,0.15)] overflow-hidden"
+  >
+    {/* Animated Background Glow */}
+    <div className="absolute inset-0 transition-opacity opacity-0 bg-gradient-to-r from-emerald-500/10 via-transparent to-transparent group-hover:opacity-100" />
+    
+    <span className="relative flex h-2 w-2">
+      <span className="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-emerald-400"></span>
+      <span className="relative inline-flex w-2 h-2 rounded-full bg-emerald-500"></span>
+    </span>
+    
+    <div className="relative flex flex-col">
+      <span className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-100/40 group-hover:text-emerald-400 transition-colors">
+        Engineered By
+      </span>
+      <span className="text-xs font-bold tracking-widest text-white uppercase">
+        wepzite<span className="text-emerald-400">.in</span>
+      </span>
+    </div>
+
+    <div className="relative p-1.5 ml-2 rounded-lg bg-white/5 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+      <ArrowUpRight size={12} className="transition-transform group-hover:rotate-45" />
+    </div>
+  </Link>
+</div>
       </div>
     </footer>
   );
