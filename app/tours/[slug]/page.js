@@ -309,7 +309,7 @@ const TourDetails = ({ params }) => {
                   <span className="text-emerald-400"> book {tour.title}?</span>
                 </h2>
 
-                <div className="grid grid-cols-2 gap-4 mb-10">
+                <div className="hidden grid-cols-2 gap-4 mb-10 ">
                   {tour.priceTiers?.map((tier, i) => (
                     <div
                       key={i}

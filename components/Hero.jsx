@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { ArrowRight, ChevronDown, Globe } from "lucide-react";
-
 import "swiper/css";
 import "swiper/css/effect-fade";
 
 // Assumed heroData structure from your data.js
 import { heroData, companyConfig } from "@/data/data";
+import Link from "next/link";
 
 const EnterpriseHero = () => {
   return (
@@ -74,6 +74,7 @@ const EnterpriseHero = () => {
 
           {/* Action Row: Matching Navbar's "Book Now" Button Style */}
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/packages" >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -82,7 +83,7 @@ const EnterpriseHero = () => {
               View Packages
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
             </motion.button>
-
+            </Link>
           </div>
         </motion.div>
       </div>
