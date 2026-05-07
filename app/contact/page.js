@@ -1,188 +1,206 @@
-import React from "react";
-// Import react-icons
-import { 
-  FaPhoneAlt, 
-  FaRegEnvelope, 
-  FaWhatsapp, 
-  FaInstagram, 
-  FaFacebookF, 
-  FaPaperPlane,
-  FaMapMarkerAlt 
-} from "react-icons/fa";
-import { IoTimeOutline } from "react-icons/io5";
-import { RiMessage2Fill } from "react-icons/ri";
+"use client";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { 
+  Mail, 
+  Phone, 
+  MapPin, 
+  MessageSquare, 
+  Clock, 
+  Send,
+  CheckCircle2
+} from "lucide-react";
+
+const ContactInfoCard = ({ icon: Icon, title, detail, subDetail, link }) => (
+  <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-500 group">
+    <div className="flex items-center justify-center mb-6 transition-all duration-500 w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl group-hover:scale-110 group-hover:bg-emerald-900 group-hover:text-white">
+      <Icon size={24} />
+    </div>
+    <h3 className="mb-2 text-xs font-black tracking-widest uppercase text-slate-900">{title}</h3>
+    <a href={link} className="block text-lg font-bold transition-colors text-slate-800 hover:text-emerald-600">
+      {detail}
+    </a>
+    <p className="mt-1 text-sm text-slate-500">{subDetail}</p>
+  </div>
+);
 
 export default function ContactPage() {
-  const companyConfig = {
-    phone: "+91 98765 43210",
-    email: "info@yourtravelagency.com",
-    address: "123, Tea Garden Road, Valparai, Pollachi - 642127",
-    workingHours: "9:00 AM - 8:00 PM (Daily)",
-    whatsapp: "919876543210"
-  };
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleWhatsAppChat = () => {
-    window.open(`https://wa.me/${companyConfig.whatsapp}?text=Hi, I have a query regarding a tour.`, "_blank");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }, 1500);
   };
 
   return (
-    <main className="min-h-screen bg-white">
-      {/* --- HERO SECTION --- */}
-      <section className="relative w-full h-[50vh] overflow-hidden bg-emerald-950 flex items-center">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&q=80&w=2000" 
-            className="object-cover w-full h-full scale-105 opacity-40 animate-subtle-zoom"
-            alt="Contact Background"
-          />
-        </div>
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-white via-transparent to-transparent" />
+    <main className="min-h-screen capitalize bg-white py-30">
+      <div className="container px-4 mx-auto">
         
-        <div className="container relative z-20 px-6 mx-auto">
-          <span className="px-5 py-2 bg-emerald-500 text-white rounded-full text-[11px] font-black uppercase tracking-[0.3em] inline-block mb-6 shadow-2xl">
+        {/* Header Section */}
+        <div className="max-w-3xl mb-20">
+          <span className="text-emerald-500 font-black text-xs uppercase tracking-[0.3em] mb-4 block">
             Get In Touch
           </span>
-          <h1 className="text-white text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9]">
-            Contact <br />
-            <span className="font-black text-emerald-400">Our Team</span>
+          <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-[0.8] mb-8">
+            Let’s Plan Your <br /> <span className="text-emerald-500">Next Escape.</span>
           </h1>
+          <p className="max-w-xl text-lg font-medium text-slate-500">
+            Have questions about our Valparai or Kerala packages? Our travel experts are ready to help you craft the perfect itinerary.
+          </p>
         </div>
-      </section>
 
-      {/* --- CONTENT SECTION --- */}
-      <section className="pb-24 -mt-20">
-        <div className="container px-6 mx-auto">
-          <div className="grid gap-12 lg:grid-cols-3">
-            
-            {/* 1. Contact Info Cards */}
-            <div className="space-y-6 lg:col-span-1">
-              <div className="p-8 bg-emerald-900 rounded-[2.5rem] text-white shadow-2xl">
-                <h3 className="mb-6 text-xl font-black tracking-tight uppercase">Reach Us Directly</h3>
-                
-                <div className="space-y-8">
-                  <div className="flex gap-4">
-                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><FaPhoneAlt size={20}/></div>
-                    <div>
-                      <p className="text-[10px] uppercase font-black tracking-widest text-emerald-500">Call Now</p>
-                      <p className="text-lg font-bold">{companyConfig.phone}</p>
-                    </div>
-                  </div>
+        {/* Contact Info Grid */}
+        <div className="grid grid-cols-1 gap-8 mb-20 md:grid-cols-3">
+          <ContactInfoCard 
+            icon={Phone}
+            title="Call Us Directly"
+            detail="+91 98765 43210"
+            subDetail="Available 9:00 AM - 9:00 PM"
+            link="tel:+919876543210"
+          />
+          <ContactInfoCard 
+            icon={MessageSquare}
+            title="WhatsApp Chat"
+            detail="Chat with Expert"
+            subDetail="Instant response for bookings"
+            link="https://wa.me/919876543210"
+          />
+          <ContactInfoCard 
+            icon={Mail}
+            title="Email Address"
+            detail="info@wepzite.in"
+            subDetail="We reply within 24 hours"
+            link="mailto:info@wepzite.in"
+          />
+        </div>
 
-                  <div className="flex gap-4">
-                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><FaRegEnvelope size={22}/></div>
-                    <div>
-                      <p className="text-[10px] uppercase font-black tracking-widest text-emerald-500">Email Address</p>
-                      <p className="font-bold break-all">{companyConfig.email}</p>
-                    </div>
+        <div className="grid items-start grid-cols-1 gap-16 lg:grid-cols-2">
+          
+          {/* Contact Form Container */}
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-[3rem] p-8 md:p-12 text-white "
+          >
+            {submitted ? (
+              <div className="py-20 text-center">
+                <div className="flex items-center justify-center w-20 h-20 mx-auto mb-6 rounded-full bg-emerald-500">
+                  <CheckCircle2 size={40} />
+                </div>
+                <h2 className="mb-4 text-3xl font-black">Message Sent!</h2>
+                <p className="text-emerald-200">Our team will contact you shortly to plan your trip.</p>
+                <button 
+                  onClick={() => setSubmitted(false)}
+                  className="pb-1 mt-8 text-xs font-black tracking-widest uppercase border-b-2 border-emerald-500"
+                >
+                  Send Another Message
+                </button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-emerald-400">Full Name</label>
+                    <input 
+                      required
+                      type="text" 
+                      placeholder="Enter your name"
+                      className="w-full px-6 py-4 transition-all bg-white border text-emerald-700 border-emerald-700 rounded-2xl placeholder:text-emerald-600 focus:outline-none focus:border-emerald-400"
+                    />
                   </div>
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-emerald-400">Phone Number</label>
+                    <input 
+                      required
+                      type="tel" 
+                      placeholder="+91"
+                      className="w-full px-6 py-4 transition-all bg-white border text-emerald-700 border-emerald-700 rounded-2xl placeholder:text-emerald-600 focus:outline-none focus:border-emerald-400"
+                    />
+                  </div>
+                </div>
 
-                  <div className="flex gap-4">
-                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><FaMapMarkerAlt size={22}/></div>
-                    <div>
-                      <p className="text-[10px] uppercase font-black tracking-widest text-emerald-500">Office Location</p>
-                      <p className="text-sm font-bold leading-relaxed">{companyConfig.address}</p>
-                    </div>
-                  </div>
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-emerald-400">Preferred Destination</label>
+                  <select className="w-full px-6 py-4 transition-all bg-white border appearance-none text-emerald-700 border-emerald-700 rounded-2xl focus:outline-none focus:border-emerald-400">
+                    <option className="bg-emerald-900">Valparai</option>
+                    <option className="bg-emerald-900">Ooty / Coonoor</option>
+                    <option className="bg-emerald-900">Kodaikanal</option>
+                    <option className="bg-emerald-900">Kerala Packages</option>
+                  </select>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-emerald-400">Your Message</label>
+                  <textarea 
+                    rows={4}
+                    placeholder="Tell us about your travel dates and number of people..."
+                    className="w-full px-6 py-4 transition-all bg-white border resize-none text-emerald-700 border-emerald-700 rounded-2xl placeholder:text-emerald-600 focus:outline-none focus:border-emerald-400"
+                  ></textarea>
                 </div>
 
                 <button 
-                  onClick={handleWhatsAppChat}
-                  className="flex items-center justify-center w-full gap-3 py-4 mt-10 text-xs font-black tracking-widest text-white uppercase transition-all bg-emerald-500 hover:bg-white hover:text-emerald-900 rounded-2xl"
+                  disabled={isSubmitting}
+                  className="w-full bg-emerald-500 hover:bg-white hover:text-emerald-900 text-emerald-900 font-black uppercase text-xs tracking-[0.2em] py-5 rounded-2xl transition-all flex items-center justify-center gap-3 disabled:opacity-50"
                 >
-                  <FaWhatsapp size={20}/> Chat on WhatsApp
+                  {isSubmitting ? "Sending..." : "Request Call Back"}
+                  <Send size={16} />
                 </button>
+              </form>
+            )}
+          </motion.div>
+
+          {/* Location & Details */}
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <div className="flex gap-6">
+                <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-2xl bg-slate-50 text-slate-400">
+                  <MapPin size={24} />
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-black tracking-widest uppercase text-slate-900">Office Location</h4>
+                  <p className="font-medium leading-relaxed text-slate-500">
+                    123, Main Road, Near New Bus Stand, <br />
+                    Pollachi, Tamil Nadu - 642001
+                  </p>
+                </div>
               </div>
 
-              {/* Social Links Card */}
-              <div className="p-8 border border-slate-100 rounded-[2.5rem] bg-slate-50 flex justify-around">
-                <a href="#" className="p-4 transition-transform bg-white rounded-full shadow-sm text-emerald-600 hover:scale-110"><FaInstagram size={22}/></a>
-                <a href="#" className="p-4 transition-transform bg-white rounded-full shadow-sm text-emerald-600 hover:scale-110"><FaFacebookF size={22}/></a>
-                <div className="flex flex-col justify-center">
-                    <p className="text-[9px] font-black uppercase text-slate-400 tracking-tighter">Follow Our</p>
-                    <p className="font-black leading-none uppercase text-emerald-900">Journeys</p>
+              <div className="flex gap-6">
+                <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-2xl bg-slate-50 text-slate-400">
+                  <Clock size={24} />
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-black tracking-widest uppercase text-slate-900">Working Hours</h4>
+                  <p className="font-medium leading-relaxed text-slate-500">
+                    Monday - Saturday: 09:00 AM - 08:00 PM <br />
+                    Sunday: 10:00 AM - 02:00 PM
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* 2. Contact Form */}
-            <div className="lg:col-span-2">
-              <div className="p-8 md:p-12 bg-white border border-slate-100 shadow-2xl rounded-[3.5rem]">
-                <div className="mb-10">
-                  <h2 className="text-3xl font-black tracking-tighter uppercase text-slate-900">Send us a <span className="text-emerald-500">Message</span></h2>
-                  <p className="mt-2 text-sm font-medium text-slate-500">Fill the form below and we'll get back to you within 2 hours.</p>
-                </div>
-
-                <form className="space-y-6">
-                  <div className="grid gap-6 md:grid-cols-2">
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-4">Full Name</label>
-                      <input type="text" placeholder="John Doe" className="w-full py-5 px-8 text-sm font-bold bg-slate-50 border-none rounded-[2rem] focus:ring-2 focus:ring-emerald-500 outline-none" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-4">Phone Number</label>
-                      <input type="tel" placeholder="+91 00000 00000" className="w-full py-5 px-8 text-sm font-bold bg-slate-50 border-none rounded-[2rem] focus:ring-2 focus:ring-emerald-500 outline-none" />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-4">Service Required</label>
-                    <div className="relative">
-                      <select className="w-full py-5 px-8 text-sm font-bold bg-slate-50 border-none rounded-[2rem] focus:ring-2 focus:ring-emerald-500 outline-none appearance-none">
-                        <option>General Tour Inquiry</option>
-                        <option>Hotel Booking</option>
-                        <option>Custom Package Request</option>
-                        <option>Feedback</option>
-                      </select>
-                      <div className="absolute inset-y-0 flex items-center pointer-events-none right-8">
-                        <RiMessage2Fill className="text-emerald-500" size={18} />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-4">Your Message</label>
-                    <textarea rows="4" placeholder="Tell us about your dream trip..." className="w-full py-5 px-8 text-sm font-bold bg-slate-50 border-none rounded-[2rem] focus:ring-2 focus:ring-emerald-500 outline-none resize-none"></textarea>
-                  </div>
-
-                  <button className="px-12 py-5 bg-emerald-900 text-white rounded-full font-black text-xs uppercase tracking-[0.3em] hover:bg-emerald-700 transition-all flex items-center justify-center gap-3 shadow-xl">
-                    Send Message <FaPaperPlane size={14}/>
-                  </button>
-                </form>
-              </div>
+            {/* Google Maps Embed (Placeholder for UI) */}
+            <div className="w-full h-80 bg-slate-100 rounded-[3rem] overflow-hidden border border-slate-100 relative grayscale hover:grayscale-0 transition-all duration-700">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.44154445852!2d76.92053746680785!3d10.66258265058778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8489c676d997d%3A0xe54699564177d61b!2sPollachi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1714123456789!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen="" 
+                    loading="lazy"
+                ></iframe>
             </div>
-
           </div>
-        </div>
-      </section>
 
-      {/* --- MAP SECTION --- */}
-      <section className="py-20 bg-slate-50 rounded-t-[4rem] md:rounded-t-[6rem]">
-        <div className="container px-6 mx-auto text-center">
-            <div className="max-w-2xl mx-auto">
-                <IoTimeOutline className="mx-auto mb-4 text-emerald-500" size={44}/>
-                <h3 className="text-2xl font-black tracking-tighter uppercase text-emerald-900">Working Hours</h3>
-                <p className="mt-2 font-bold text-slate-500">{companyConfig.workingHours}</p>
-                
-                <div className="mt-10 h-[350px] w-full bg-white p-2 rounded-[3.5rem] shadow-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.44153130119!2d76.88338308434856!3d10.66258074369064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba84e62232a514d%3A0x7c735d48149f1367!2sPollachi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1714890000000!5m2!1sen!2sin" 
-                        width="100%" height="100%" style={{border:0, borderRadius: '2.8rem'}} allowFullScreen="" loading="lazy">
-                    </iframe>
-                </div>
-            </div>
         </div>
-      </section>
-
-      <style jsx global>{`
-        @keyframes subtle-zoom {
-          from { transform: scale(1); }
-          to { transform: scale(1.1); }
-        }
-        .animate-subtle-zoom {
-          animation: subtle-zoom 12s infinite alternate linear;
-        }
-      `}</style>
+      </div>
     </main>
   );
 }

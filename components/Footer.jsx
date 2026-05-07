@@ -32,7 +32,7 @@ const Footer = () => {
               featured packages
             </h4>
             <ul className="grid grid-cols-1 gap-4">
-              {tourPackages.slice(0, 5).map((pkg,i) => (
+              {tourPackages.map((pkg,i) => (
                 <li key={i}>
                   <Link 
                     href={`/tours/${pkg.slug}`}
