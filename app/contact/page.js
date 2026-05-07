@@ -1,16 +1,18 @@
 "use client";
 
 import React from "react";
+// Import react-icons
 import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  MessageCircle, 
-  Send, 
-  Clock, 
-  Instagram, 
-  Facebook 
-} from "lucide-react";
+  FaPhoneAlt, 
+  FaRegEnvelope, 
+  FaWhatsapp, 
+  FaInstagram, 
+  FaFacebookF, 
+  FaPaperPlane,
+  FaMapMarkerAlt 
+} from "react-icons/fa";
+import { IoTimeOutline } from "react-icons/io5";
+import { RiMessage2Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 export default function ContactPage() {
@@ -62,15 +64,15 @@ export default function ContactPage() {
                 
                 <div className="space-y-8">
                   <div className="flex gap-4">
-                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><Phone size={24}/></div>
+                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><FaPhoneAlt size={20}/></div>
                     <div>
-                      <p className="text-[10px] uppercase font-black tracking-widest text-emerald-500">Call/WhatsApp</p>
+                      <p className="text-[10px] uppercase font-black tracking-widest text-emerald-500">Call Now</p>
                       <p className="text-lg font-bold">{companyConfig.phone}</p>
                     </div>
                   </div>
 
                   <div className="flex gap-4">
-                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><Mail size={24}/></div>
+                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><FaRegEnvelope size={22}/></div>
                     <div>
                       <p className="text-[10px] uppercase font-black tracking-widest text-emerald-500">Email Address</p>
                       <p className="font-bold break-all">{companyConfig.email}</p>
@@ -78,7 +80,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex gap-4">
-                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><MapPin size={24}/></div>
+                    <div className="p-3 bg-white/10 rounded-2xl text-emerald-400"><FaMapMarkerAlt size={22}/></div>
                     <div>
                       <p className="text-[10px] uppercase font-black tracking-widest text-emerald-500">Office Location</p>
                       <p className="text-sm font-bold leading-relaxed">{companyConfig.address}</p>
@@ -90,14 +92,14 @@ export default function ContactPage() {
                   onClick={handleWhatsAppChat}
                   className="flex items-center justify-center w-full gap-3 py-4 mt-10 text-xs font-black tracking-widest text-white uppercase transition-all bg-emerald-500 hover:bg-white hover:text-emerald-900 rounded-2xl"
                 >
-                  <MessageCircle size={18}/> Chat on WhatsApp
+                  <FaWhatsapp size={20}/> Chat on WhatsApp
                 </button>
               </div>
 
               {/* Social Links Card */}
               <div className="p-8 border border-slate-100 rounded-[2.5rem] bg-slate-50 flex justify-around">
-                <a href="#" className="p-4 transition-transform bg-white rounded-full shadow-sm text-emerald-600 hover:scale-110"><Instagram size={24}/></a>
-                <a href="#" className="p-4 transition-transform bg-white rounded-full shadow-sm text-emerald-600 hover:scale-110"><Facebook size={24}/></a>
+                <a href="#" className="p-4 transition-transform bg-white rounded-full shadow-sm text-emerald-600 hover:scale-110"><FaInstagram size={22}/></a>
+                <a href="#" className="p-4 transition-transform bg-white rounded-full shadow-sm text-emerald-600 hover:scale-110"><FaFacebookF size={22}/></a>
                 <div className="flex flex-col justify-center">
                     <p className="text-[9px] font-black uppercase text-slate-400 tracking-tighter">Follow Our</p>
                     <p className="font-black leading-none uppercase text-emerald-900">Journeys</p>
@@ -127,12 +129,17 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-4">Service Required</label>
-                    <select className="w-full py-5 px-8 text-sm font-bold bg-slate-50 border-none rounded-[2rem] focus:ring-2 focus:ring-emerald-500 outline-none appearance-none">
-                      <option>General Tour Inquiry</option>
-                      <option>Hotel Booking</option>
-                      <option>Custom Package Request</option>
-                      <option>Feedback</option>
-                    </select>
+                    <div className="relative">
+                      <select className="w-full py-5 px-8 text-sm font-bold bg-slate-50 border-none rounded-[2rem] focus:ring-2 focus:ring-emerald-500 outline-none appearance-none">
+                        <option>General Tour Inquiry</option>
+                        <option>Hotel Booking</option>
+                        <option>Custom Package Request</option>
+                        <option>Feedback</option>
+                      </select>
+                      <div className="absolute inset-y-0 flex items-center pointer-events-none right-8">
+                        <RiMessage2Fill className="text-emerald-500" size={18} />
+                      </div>
+                    </div>
                   </div>
 
                   <div className="space-y-2">
@@ -141,7 +148,7 @@ export default function ContactPage() {
                   </div>
 
                   <button className="px-12 py-5 bg-emerald-900 text-white rounded-full font-black text-xs uppercase tracking-[0.3em] hover:bg-emerald-700 transition-all flex items-center justify-center gap-3 shadow-xl">
-                    Send Message <Send size={16}/>
+                    Send Message <FaPaperPlane size={14}/>
                   </button>
                 </form>
               </div>
@@ -151,18 +158,18 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* --- MAP / FOOTER CTA --- */}
+      {/* --- MAP SECTION --- */}
       <section className="py-20 bg-slate-50 rounded-t-[4rem] md:rounded-t-[6rem]">
         <div className="container px-6 mx-auto text-center">
             <div className="max-w-2xl mx-auto">
-                <Clock className="mx-auto mb-4 text-emerald-500" size={40}/>
+                <IoTimeOutline className="mx-auto mb-4 text-emerald-500" size={44}/>
                 <h3 className="text-2xl font-black tracking-tighter uppercase text-emerald-900">Working Hours</h3>
                 <p className="mt-2 font-bold text-slate-500">{companyConfig.workingHours}</p>
-                <div className="mt-10 h-[300px] w-full bg-slate-200 rounded-[3rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border-4 border-white">
-                    {/* Replace this iframe with your actual Google Maps embed link */}
+                
+                <div className="mt-10 h-[350px] w-full bg-white p-2 rounded-[3.5rem] shadow-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.44153130119!2d76.88338308434856!3d10.66258074369064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba84e62232a514d%3A0x7c735d48149f1367!2sPollachi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1714890000000!5m2!1sen!2sin" 
-                        width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy">
+                        width="100%" height="100%" style={{border:0, borderRadius: '2.8rem'}} allowFullScreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
