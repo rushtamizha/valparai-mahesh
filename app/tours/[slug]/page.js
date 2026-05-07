@@ -31,7 +31,6 @@ import { tourPackages, companyConfig } from "@/data/data";
 import TourHero from "@/components/TourHero";
 import RelatedTours from "@/components/RelatedTours";
 import TourImageGallery from "@/components/TourImageGallery";
-import BookingForm from "@/components/BookingForm";
 
 const Input = ({ icon, ...props }) => (
   <div className="relative">
@@ -69,23 +68,24 @@ const TourDetails = ({ params }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleWhatsAppSubmit = (e) => {
-    e.preventDefault();
+ const handleWhatsAppSubmit = (e) => {
+  e.preventDefault();
 
-    const message =
-      `*NEW BOOKING ENQUIRY*%0A` +
-      `--------------------------%0A` +
-      `*Package Name:* ${tour.title}%0A` +
-      `*Name:* ${formData.fullName}%0A` +
-      `*Phone:* ${formData.phone}%0A` +
-      `*Date:* ${formData.date}%0A` +
-      `*Adults:* ${formData.adults}%0A` +
-      `*Children:* ${formData.children}%0A` +
-      `--------------------------`;
+  const message =
+    `*NEW BOOKING ENQUIRY*%0A` +
+    `--------------------------%0A` +
+    `*Package Name:* ${tour.title}%0A` +
+    `*Name:* ${formData.fullName}%0A` +
+    `*Phone:* ${formData.phone}%0A` +
+    `*Date:* ${formData.date}%0A` +
+    `*Adults:* ${formData.adults}%0A` +
+    `*Children:* ${formData.children}%0A` +
+    `--------------------------`;
 
-    const whatsappUrl = `https://wa.me/${companyConfig.phone.replace(/[^0-9]/g, "")}?text=${message}`;
-    window.open(whatsappUrl, "_blank");
-  };
+  const whatsappUrl = `https://wa.me/${companyConfig.contact.whatsapp}?text=${message}`;
+
+  window.open(whatsappUrl, "_blank");
+};
 
   const otherTours = tourPackages.filter((p) => p.slug !== slug);
 
