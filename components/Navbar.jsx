@@ -104,7 +104,8 @@ const Navbar = () => {
         </div>
 
         {/* RIGHT CTA */}
-        <div className="items-center hidden gap-3 px-2 xl:flex">
+        <div className="items-center hidden gap-3 rounded-full xl:flex">
+         
           <button
             onClick={() => router.push('/contact')}
             className="flex items-center gap-2 py-3 text-xs font-black tracking-wider text-white uppercase transition-all rounded-full shadow-md bg-emerald-900 px-7 hover:bg-emerald-700"

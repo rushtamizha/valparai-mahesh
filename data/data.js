@@ -16,6 +16,7 @@ import {
   Heart,
   Zap,
 } from "lucide-react";
+import { BsCash } from "react-icons/bs";
 
 export const companyConfig = {
   name: "Valparai Mahesh & Travels",
@@ -136,6 +137,12 @@ export const navData = [
         icon: <Camera size={14} />,
       },
     ],
+  },
+  {
+    name: "Payment Info",
+    slug: "/payment",
+    link: "/payment",
+    icon: <BsCash size={16} />,
   },
 ];
 
