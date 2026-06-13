@@ -21,10 +21,10 @@ export async function generateMetadata({ params }) {
 
   const pageUrl = `${SITE_URL}/tours/${slug}`;
 
-  const title = `${tour.title} Tour Package `;
+  const title = `${tour.title} `;
 
   const description =
-    `${tour.description}. Book ${tour.title} Tour Package tour package`;
+    `${tour.description}. Book ${tour.title} `;
 
   return {
     metadataBase: new URL(SITE_URL),
