@@ -3,7 +3,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { Maximize2, Play } from "lucide-react"; // Imported missing icons
-
 import "swiper/css";
 import "swiper/css/effect-fade";
 

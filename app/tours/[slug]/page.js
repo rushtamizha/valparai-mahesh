@@ -31,6 +31,7 @@ import { tourPackages, companyConfig } from "@/data/data";
 import TourHero from "@/components/TourHero";
 import RelatedTours from "@/components/RelatedTours";
 import TourImageGallery from "@/components/TourImageGallery";
+import Testimonials from "@/components/Testimonials";
 
 const Input = ({ icon, ...props }) => (
   <div className="relative">
@@ -94,7 +95,7 @@ const TourDetails = ({ params }) => {
       <TourHero tour={tour} />
 
       {/* 1. CORE INFO STRIP */}
-      <section className="py-12 border-b border-slate-100">
+      <section className="py-10 border-b border-slate-100">
         <div className="container px-6 mx-auto">
           <div className="flex flex-wrap gap-8 md:gap-16">
             <InfoBox
@@ -127,7 +128,7 @@ const TourDetails = ({ params }) => {
       <TourImageGallery images={tour.places} title={tour.title} />
 
       {/* 2. MAIN CONTENT GRID */}
-      <section className="py-10">
+      <section className="py-10 ">
         <div className="container px-6 mx-auto">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
             <div className="lg:col-span-8">
@@ -295,6 +296,7 @@ const TourDetails = ({ params }) => {
       </section>
 
       {/* 3. PREMIUM BOOKING FORM (Same as before) */}
+      <Testimonials/>
       <section
         id="book"
         className="bg-emerald-950 py-14 rounded-t-[4rem] md:rounded-t-[6rem]"

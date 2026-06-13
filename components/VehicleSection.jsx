@@ -13,7 +13,7 @@ import { fleet } from "@/data/data";
 
 const VehicleSection = () => {
   return (
-    <section className="capitalize bg-white" id="car-rentals">
+    <section className="capitalize bg-white pt-15" id="car-rentals">
       <div className="container px-4 mx-auto">
         {/* Header - Matching TourCarousel Style */}
         <div className="max-w-3xl mb-10">
@@ -40,7 +40,7 @@ const VehicleSection = () => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="vehicle-swiper !pb-20"
+          className="vehicle-swiper "
         >
           {fleet.map((vehicle) => (
             <SwiperSlide key={vehicle.id}>

@@ -26,7 +26,7 @@ const TourMediaGallery = ({ images, title }) => {
   };
 
   return (
-    <section className="w-full py-12 font-sans">
+    <section className="w-full py-10 font-sans">
       <div className="container px-4 mx-auto md:px-6">
         
         {/* Section Header */}

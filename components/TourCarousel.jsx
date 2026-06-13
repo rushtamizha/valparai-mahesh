@@ -15,7 +15,7 @@ import { tourPackages } from "@/data/data";
 
 const TourCarousel = () => {
   return (
-    <section className="py-10 capitalize bg-white">
+    <section className="capitalize bg-white pt-15">
       <div className="container px-4 mx-auto">
         {/* Header Section */}
         <div className="flex flex-col items-end justify-between gap-6 mb-5 md:flex-row">

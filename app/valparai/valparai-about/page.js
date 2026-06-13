@@ -19,6 +19,7 @@ import {
   History,
   ArrowRight
 } from "lucide-react";
+import { galleryImage } from "@/data/data";
 
 export default function AboutValparai() {
   const stats = [
@@ -120,7 +121,7 @@ export default function AboutValparai() {
       </section>
 
       {/* 4. RESPONSIVE GALLERY SLIDER */}
-      <section className="py-14 bg-emerald-950 rounded-t-[4rem] md:rounded-t-[6rem]">
+      <section className="pt-14 bg-emerald-950 rounded-t-[4rem] md:rounded-t-[6rem]">
         <div className="container px-6 mx-auto">
           <div className="flex items-end justify-between mb-12">
             <h2 className="text-4xl font-black tracking-tighter text-white capitalize md:text-7xl">
@@ -137,12 +138,12 @@ export default function AboutValparai() {
               768: { slidesPerView: 2.5 },
               1024: { slidesPerView: 3.5 }
             }}
-            className="gallery-swiper !pb-16"
+            className="gallery-swiper "
           >
-            {[1, 2, 3,].map((i) => (
+            {galleryImage.map((i) => (
               <SwiperSlide key={i}>
                 <div className="aspect-[3/4] rounded-[3rem] overflow-hidden border border-white/10 relative group">
-                   <img src={`/valparai/valparai${i}.jpg`} className="object-cover w-full h-full transition-all duration-500 grayscale group-hover:grayscale-0" />
+                   <img src={i} className="object-cover w-full h-full transition-all duration-500 " />
                    <div className="absolute inset-0 flex items-end p-8 transition-opacity opacity-0 bg-gradient-to-t from-emerald-950/80 to-transparent group-hover:opacity-100">
                       <p className="text-lg font-black text-white capitalize">valparai captures.</p>
                    </div>

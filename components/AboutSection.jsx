@@ -15,7 +15,7 @@ import { companyConfig } from "@/data/data";
 
 const AboutSection = () => {
   return (
-    <section className="py-10 overflow-hidden bg-white">
+    <section className="overflow-hidden bg-white pt-15">
       <div className="container px-4 mx-auto">
         <div className="grid items-start gap-16 lg:grid-cols-12">
           

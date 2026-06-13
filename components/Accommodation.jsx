@@ -144,9 +144,9 @@ export default function AccommodationPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white" id="hotels">
+    <main className="min-h-screen bg-white pt-15" id="hotels">
    {/* Description Section */}
-      <section className="py-12 bg-white">
+      <section className="pb-10 bg-white">
         <div className="container px-6 mx-auto">
           <div className="flex flex-col items-end justify-between gap-6 mb-5 md:flex-row">
             <div className="max-w-2xl">
@@ -162,7 +162,7 @@ export default function AccommodationPage() {
       </section>
 
       {/* Rooms Swiper */}
-      <section className="overflow-hidden bg-white pb-14">
+      <section className="overflow-hidden bg-white ">
         <div className="container px-5 mx-auto">
           <Swiper modules={[Autoplay]} spaceBetween={24} loop={true} breakpoints={{ 0: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1200: { slidesPerView: 3 } }} className="!overflow-visible">
             {roomsData.map((room) => (

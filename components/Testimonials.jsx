@@ -26,7 +26,7 @@ const Testimonials = () => {
           slidesPerView={1}
           autoplay={{ delay: 5000 }}
           breakpoints={{ 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
-          className="testimonial-card-swiper !pb-14"
+          className="testimonial-card-swiper "
         >
           {testimonials[0].reviews.slice(10)?.map((review, idx) => (
             <SwiperSlide key={idx}>

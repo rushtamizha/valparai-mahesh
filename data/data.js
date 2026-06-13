@@ -599,6 +599,9 @@ export const galleryImages = [
   },
 ];
 
+export const galleryImage = Array.from({ length: 46 }, (_, i) => 
+  `/valparai/valparai-pollachi-package-${i + 1}.jpg`
+);
 export const attractions = [
   // --- POLLACHI & VALPARAI SECTOR ---
   {
