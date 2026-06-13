@@ -4,7 +4,7 @@
 @import "tailwindcss";
 *{
   scrollbar-width: none;
-  font-family: "Space Grotesk";
+font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
 }
 :root {

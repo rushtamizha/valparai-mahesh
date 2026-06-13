@@ -4,16 +4,16 @@ export function middleware(request) {
   // 1. Generate a random nonce for script authentication
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
 
-  // 2. Define your strict Content Security Policy directives
+  // 2. Content Security Policy with Google Fonts allowed
   const cspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
       process.env.NODE_ENV === 'development' ? "'unsafe-eval'" : ""
     };
-    style-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' data: https://fonts.gstatic.com;
     img-src 'self' blob: data: https:;
     video-src 'self' blob: data: https:;
-    font-src 'self' data:;
     connect-src 'self' https:;
     frame-src 'self';
     object-src 'none';
@@ -21,7 +21,7 @@ export function middleware(request) {
     form-action 'self';
     frame-ancestors 'none';
     upgrade-insecure-requests;
-  `.replace(/\s{2,}/g, ' ').trim(); // Clean up spacing lines
+  `.replace(/\s{2,}/g, ' ').trim();
 
   // 3. Set the request headers so Next.js can read the nonce in Server Components
   const requestHeaders = new Headers(request.headers);

@@ -16,7 +16,7 @@ export default async function RootLayout({ children }) {
         Passing the nonce string directly to the nonce property on the body tag 
         tells Next.js to inject this token into all internal framework scripts.
       */}
-      <body className="flex flex-col min-h-full font-sans" nonce={nonce}>
+      <body className="flex flex-col min-h-full font-sans" nonce={nonce} suppressHydrationWarning >
         <Navbar/>
         <main className="flex-grow">
           {children}
