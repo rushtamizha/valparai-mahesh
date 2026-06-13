@@ -1,53 +1,3 @@
-// import { tourPackages } from "@/data/data";
-// import TourDetails from "./TourComponent";
-
-// export async function generateMetadata({ params }) {
-//   // 1. Await the params
-//   const { slug } = await params;
-  
-//   // 2. Fetch the tour data
-//   const tour = tourPackages.find((p) => p.slug === slug);
-
-//   if (!tour) return { title: "Tour Not Found" };
-
-//   // 3. Construct SEO-optimized data
-//   const title = `${tour.title} | ${tour.duration} - Best Tour Package in India`;
-//   const description = `${tour.description.slice(0, 155)}... Book your ${tour.title} tour today for just ₹${tour.basePrice}. Experience the best of ${tour.tourFrom} with our private cab services.`;
-
-//   return {
-//     title: title,
-//     description: description,
-//     // OpenGraph adds rich snippets for social media sharing
-//     openGraph: {
-//       title: title,
-//       description: description,
-//       type: "website",
-//       images: [
-//         {
-//           url: tour.image || "/default-og-image.jpg",
-//           width: 1200,
-//           height: 630,
-//           alt: tour.title,
-//         },
-//       ],
-//     },
-//     // Twitter/X card
-//     twitter: {
-//       card: "summary_large_image",
-//       title: title,
-//       description: description,
-//     },
-//     // Canonical link to prevent duplicate content issues
-//     alternates: {
-//       canonical: `/tours/${slug}`,
-//     },
-//   };
-// }
-
-// export default function Page({ params }) {
-//   // Pass the params down to your client component
-//   return <TourDetails params={params} />;
-// }
 
 import { tourPackages } from "@/data/data";
 import TourDetails from "./TourComponent";
@@ -71,12 +21,10 @@ export async function generateMetadata({ params }) {
 
   const pageUrl = `${SITE_URL}/tours/${slug}`;
 
-  const title = `${tour.title} Tour Package (${tour.duration}) | Starting ₹${tour.basePrice}`;
+  const title = `${tour.title} Tour Package `;
 
   const description =
-    `${tour.description}. Book ${tour.title} tour package from ${tour.tourFrom}. ` +
-    `Private cab, sightseeing, experienced drivers and customizable itinerary. ` +
-    `Starting from ₹${tour.basePrice}.`;
+    `${tour.description}. Book ${tour.title} Tour Package tour package`;
 
   return {
     metadataBase: new URL(SITE_URL),

@@ -127,6 +127,7 @@ const TourDetails = ( {params} ) => {
       </section>
 
       <TourImageGallery images={tour.places} title={tour.title} />
+      <h1 className="hidden"> {tour.title}</h1>
 
       {/* 2. MAIN CONTENT GRID */}
       <section className="py-10 ">
