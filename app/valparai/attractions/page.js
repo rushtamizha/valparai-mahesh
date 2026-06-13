@@ -17,7 +17,7 @@ export default function AttractionsPage() {
       {/* 1. DYNAMIC HERO SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-emerald-950">
         <div className="absolute inset-0 opacity-40">
-           <img src="/HeroImages/valparai-tour-package.webp" className="object-cover w-full h-full" alt="Attractions" />
+           <img src="/HeroImages/valparai-tour-package.png" className="object-cover w-full h-full" alt="Attractions" />
         </div>
         <div className="container relative z-10 px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>

@@ -11,7 +11,8 @@ import {
   CheckCircle2,
   ChevronDown,
   Users,
-  Calendar
+  Calendar,
+  Fullscreen
 } from "lucide-react";
 
 const ContactInfoCard = ({ icon: Icon, title, detail, subDetail, link }) => (
@@ -175,7 +176,11 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="text-[10px] font-black tracking-widest uppercase text-slate-400">Main Office</h4>
-                  <p className="font-medium text-slate-800">Near New Bus Stand, Pollachi, TN - 642001</p>
+                  <p className="font-medium text-slate-800">
+                    9/848, near Hotel Holiday Break, <br />
+                    Karunanithi Nagar, Valparai <br />
+                    Tamil Nadu 642127
+                  </p>
                 </div>
               </div>
               <div className="flex gap-6 group">
@@ -191,11 +196,7 @@ export default function ContactPage() {
 
             {/* Map */}
             <div className="w-full h-[350px] bg-slate-100 rounded-[3rem] overflow-hidden border-4 border-slate-50 shadow-sm">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.44154445852!2d76.92053746680785!3d10.66258265058778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8489c676d997d%3A0xe54699564177d61b!2sPollachi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1714123456789!5m2!1sen!2sin" 
-                width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy"
-                className="transition-all duration-700 grayscale hover:grayscale-0"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3925.1921412995775!2d76.955128!3d10.326503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0789b6e4d9b33f%3A0xe684916813be906c!2sVALPARAI%20MAHESH%20TRAVELS!5e0!3m2!1sen!2sus!4v1778395074108!5m2!1sen!2sus" width="100%" height="100%" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

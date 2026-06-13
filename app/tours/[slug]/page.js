@@ -74,7 +74,7 @@ const TourDetails = ({ params }) => {
   const message =
     `*NEW BOOKING ENQUIRY*%0A` +
     `--------------------------%0A` +
-    `*Package Name:* ${tour.title}%0A` +
+    `*Package Name:* ${tour.title} ${tour.duration}%0A` +
     `*Name:* ${formData.fullName}%0A` +
     `*Phone:* ${formData.phone}%0A` +
     `*Date:* ${formData.date}%0A` +

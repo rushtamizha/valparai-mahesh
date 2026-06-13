@@ -2,7 +2,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade, Navigation } from "swiper/modules";
-import { Image as ImageIcon, Maximize2 } from "lucide-react";
+import { Image as ImageIcon, Maximize2, Play } from "lucide-react"; // Added Play icon for video fallback/badge
 
 // Import Swiper styles
 import "swiper/css";
@@ -10,13 +10,20 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-const TourImageGallery = ({ images, title }) => {
-  // Fallback images if the array is empty or undefined
-  const galleryImages = images?.length > 0 ? images : [
+const TourMediaGallery = ({ images, title }) => {
+  // Fallback media if the array is empty or undefined
+  const galleryMedia = images?.length > 0 ? images : [
     "/HeroImages/valparai-tour-package.webp",
     "/HeroImages/athirapally.webp",
     "/HeroImages/munnar.webp"
   ];
+
+  // Helper function to check if a file path is a video
+  const isVideo = (url) => {
+    if (typeof url !== 'string') return false;
+    // Standard video extensions
+    return /\.(mp4|webm|ogg|mov|m4v)$/i.test(url);
+  };
 
   return (
     <section className="w-full py-12 font-sans">
@@ -38,14 +45,14 @@ const TourImageGallery = ({ images, title }) => {
         </div>
 
         {/* Swiper Container */}
-        <div className="relative group rounded-[2.5rem] overflow-hidden  ">
+        <div className="relative group rounded-[2.5rem] overflow-hidden">
           <Swiper
             modules={[Autoplay, Pagination, EffectFade, Navigation]}
             effect="fade"
             loop={true}
             speed={1000}
             autoplay={{
-              delay: 4000,
+              delay: 5000, // Slightly increased delay to give videos a chance to play a bit
               disableOnInteraction: false,
             }}
             pagination={{
@@ -54,33 +61,54 @@ const TourImageGallery = ({ images, title }) => {
             }}
             className="w-full h-[350px] md:h-[550px]"
           >
-            {galleryImages.map((img, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative w-full h-full">
-                  <img
-                    src={img}
-                    alt={`${title} view ${index + 1}`}
-                    className="object-cover w-full h-full"
-                  />
-                  {/* Subtle Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                  
-                  {/* Floating Badge */}
-                  <div className="absolute items-center hidden gap-3 p-4 text-white border bottom-10 left-10 md:flex bg-white/10 backdrop-blur-md border-white/20 rounded-2xl">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-500">
-                      <Maximize2 size={14} />
-                    </div>
-                    <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest leading-none">Perspective {index + 1}</p>
-                      <p className="text-sm font-medium">Exclusive Viewpoint</p>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            {galleryMedia.map((item, index) => {
+              const checkVideo = isVideo(item);
 
-       
+              return (
+                <SwiperSlide key={index}>
+                  <div className="relative w-full h-full bg-black">
+                    
+                    {/* Conditional Rendering based on media type */}
+                    {checkVideo ? (
+                      <video
+                        src={item}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="object-cover w-full h-full"
+                      />
+                    ) : (
+                      <img
+                        src={item}
+                        alt={`${title} view ${index + 1}`}
+                        className="object-cover w-full h-full"
+                      />
+                    )}
+
+                    {/* Subtle Gradient Overlay */}
+                    <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                    
+                    {/* Floating Badge */}
+                    <div className="absolute items-center hidden gap-3 p-4 text-white border pointer-events-none bottom-10 left-10 md:flex bg-white/10 backdrop-blur-md border-white/20 rounded-2xl">
+                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-500">
+                        {checkVideo ? <Play size={14} fill="currentColor" /> : <Maximize2 size={14} />}
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-black uppercase tracking-widest leading-none">
+                          {checkVideo ? "Video Clip" : `Perspective ${index + 1}`}
+                        </p>
+                        <p className="text-sm font-medium">
+                          {checkVideo ? "Immersive Experience" : "Exclusive Viewpoint"}
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
 
@@ -100,4 +128,4 @@ const TourImageGallery = ({ images, title }) => {
   );
 };
 
-export default TourImageGallery;
+export default TourMediaGallery;

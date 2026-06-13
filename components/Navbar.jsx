@@ -79,7 +79,7 @@ const Navbar = () => {
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 mt-4 w-64 bg-white border border-emerald-50 shadow-2xl rounded-[1.5rem] p-3 flex flex-col gap-1 z-[1000]"
+                    className="absolute top-10 left-0 mt-4 w-100 bg-white border border-emerald-50 shadow-2xl rounded-[1.5rem] p-3 flex flex-col gap-1 z-[1000]"
                   >
                     {menu.items.map((subItem, i) => (
                       <button

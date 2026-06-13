@@ -154,7 +154,7 @@ export default function AccommodationPage() {
               <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">Luxury Hotel <span className="text-emerald-500">Stays & Resorts</span></h2>
               <p className="font-medium leading-relaxed tracking-wide text-slate-600">Comfortable stays with premium amenities, beautiful interiors, and peaceful surroundings.</p>
             </div>
-            <button onClick={() => openBooking("General Enquiry")} className="flex items-center gap-3 px-6 py-4 text-sm font-bold text-white transition-all rounded-full shadow-lg bg-emerald-500 hover:scale-105">
+            <button onClick={() => openBooking("General Enquiry")} className="flex items-center gap-3 px-6 py-4 text-sm font-bold text-white transition-all rounded-full shadow-lg bg-emerald-800 hover:scale-105">
               <MessageCircle size={18} /> WhatsApp Enquiry
             </button>
           </div>
@@ -181,11 +181,11 @@ export default function AccommodationPage() {
                     <div className="flex items-center justify-between pt-5 border-t border-slate-100">
                       <div>
                         <p className="text-xs uppercase text-slate-400">Starting From</p>
-                        <h3 className="text-lg font-black text-emerald-600">{room.price}</h3>
+                        <h3 className="text-lg font-black text-emerald-800">{room.price}</h3>
                       </div>
                       <button 
                         onClick={() => openBooking(room.name)}
-                        className="flex items-center gap-2 px-5 py-3 text-xs font-black text-white uppercase transition-all rounded-full bg-emerald-500 hover:bg-emerald-600"
+                        className="flex items-center gap-2 px-5 py-3 text-xs font-black text-white uppercase transition-all rounded-full bg-emerald-800 hover:bg-emerald-600"
                       >
                         Book Now <ChevronRight size={14} />
                       </button>

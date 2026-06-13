@@ -55,14 +55,14 @@ const TourCarousel = () => {
                 className="bg-white rounded-[2rem] overflow-hidden border border-slate-100   shadow-slate-200/50 flex flex-col h-full group "
               >
                 {/* Image Container */}
-                <div className="relative overflow-hidden h-60">
+                <div className="relative overflow-hidden h-50">
                   <img 
                     src={tour.image} 
                     alt={tour.title}
                     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm">
-                    <span className="text-[10px] font-black uppercase leading-relaxed tracking-wide text-emerald-800">{tour.tag}</span>
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm hidden">
+                    <span className="text-[10px] font-black uppercase leading-relaxed tracking-wide text-emerald-800 ">{tour.tag}</span>
                   </div>
                 </div>
 
