@@ -23,9 +23,9 @@ export const companyConfig = {
   founderImg: "founder.jpg",
   logo: "logo.jpg",
   contact: {
-    phone: "+91 9626850192",
-    whatsapp: "919626850192", // International format for URL linking
-    email: "info@maheshtours.com", // Added missing data
+    phone: "+91 9487424257",
+    whatsapp: "919487424257", // International format for URL linking
+    email: "valparaiholidaytours@gmail.com", // Added missing data
   },
   address: {
     street: "133/Chellandiamman Kovil Street",
@@ -432,7 +432,7 @@ export const tourPackages = [
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
     includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
-    image: "/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor1.jpg",
+    image: "/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor-4d-3n.png",
     places: ["/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor2.jpg", "/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor3.jpg","/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor1.jpg","/cochin-munnar-kanthaloor-marayoor/cochin-munnar-kanthaloor-marayoor4.jpg"],
     tag: "Top Choice",
   },
@@ -449,7 +449,7 @@ export const tourPackages = [
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
     includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
-    image: "/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg",
+    image: "/coimbatore-kerala-wonders/coimbatore-kerala-wonders-5d-4n.png",
     places: ["/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg", "/coimbatore-kerala-wonders/coimbatore-kerala-wonders2.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders3.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders4.jpg"],
     tag: "Adventure",
   },
@@ -466,7 +466,7 @@ export const tourPackages = [
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
     includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
-    image: "/alleppey-munnar/alleppey-munnar1.jpg",
+    image: "/alleppey-munnar/cochin-alleppey-munnar-thekkady-6d-5n.png",
     places: ["/alleppey-munnar/alleppey-munnar1.jpg", "/alleppey-munnar/alleppey-munnar2.jpg", "/alleppey-munnar/alleppey-munnar3.jpg"],
     tag: "Honeymoon Special",
   },
@@ -483,7 +483,7 @@ export const tourPackages = [
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
      includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
-    image: "/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg",
+    image: "/alleppey-munnar/cochin-alleppey-munnar-thekkady-6d-5n.png",
     places: ["/coimbatore-kerala-wonders/coimbatore-kerala-wonders1.jpg", "/coimbatore-kerala-wonders/coimbatore-kerala-wonders2.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders3.avif","/coimbatore-kerala-wonders/coimbatore-kerala-wonders4.jpg"],
     tag: "Family Special",
   },
@@ -500,7 +500,7 @@ export const tourPackages = [
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
    includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
-    image: "/kerala-panorama/kerala-panorama2.webp",
+    image: "/kerala-panorama/kerala-panorama-10d-9n.png",
     places: ["/kerala-panorama/kerala-panorama2.webp", "/kerala-panorama/kerala-panorama3.jpg", "/kerala-panorama/kerala-panorama4.webp", "/kerala-panorama/kerala-panorama5.webp", "/kerala-panorama/kerala-panorama6.jpg"],
     tag: "Signature Journey",
   }
