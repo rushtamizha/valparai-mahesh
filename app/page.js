@@ -3,6 +3,7 @@ import Accommodation from "@/components/Accommodation";
 import Footer from "@/components/Footer";
 import GallerySection from "@/components/GallerySection";
 import Hero from "@/components/Hero";
+import TravelPartners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import TourCarousel from "@/components/TourCarousel";
 import VehicleSection from "@/components/VehicleSection";
@@ -20,6 +21,7 @@ export default function Home() {
         <GallerySection/>
         <WhyChooseUs/>
         <Testimonials/>
+        <TravelPartners/>
     </div>
   );
 }

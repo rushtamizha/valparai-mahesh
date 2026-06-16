@@ -58,7 +58,7 @@ const AboutPage = () => {
               </div>
               <div className="absolute -bottom-8 -right-8 p-10 bg-emerald-500 rounded-[3rem] text-white shadow-2xl hidden md:block">
                 <Quote size={40} className="mb-4 opacity-50" />
-                <p className="font-black italic text-xl tracking-tight">"Nature is the best host."</p>
+                <p className="font-black  text-xl tracking-tight">"Nature is the best host."</p>
               </div>
             </div>
             

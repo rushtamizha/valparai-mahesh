@@ -68,8 +68,7 @@ const EnterpriseHero = () => {
 
           {/* Narrative: Using Slate-200 to match Navbar's text-slate utility */}
           <p className="max-w-2xl mx-auto mb-12 font-medium leading-relaxed tracking-wide text-slate-200 md:text-lg ">
-            Bespoke travel logistics and luxury destination management. 
-            Experience the world with <span className="text-emerald-400">unparalleled professional standards</span>.
+           Valparai Mahesh Travels is a <span className="text-emerald-500"> trusted travel partner</span> based in the heart of <span className="text-emerald-500"> Valparai</span>, with branches extending to Pollachi, Coimbatore, and Cochin.
           </p>
 
           {/* Action Row: Matching Navbar's "Book Now" Button Style */}

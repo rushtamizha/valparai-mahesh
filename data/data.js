@@ -47,94 +47,97 @@ export const companyConfig = {
 
 export const navData = [
   { name: "Home", link: "/", icon: <Home size={16} /> },
+
   {
-  name: "Tour Packages",
-  slug: "tours",
-  icon: <Package size={16} />,
-  items: [
+    name: "Tour Packages",
+    slug: "tours",
+    icon: <Package size={16} />,
+    items: [
+      {
+        name: "Valparai Tour Packages",
+        slug: "valparai-tours",
+        icon: <MapPin size={14} />,
+        items: [
+          {
+            name: "2D 1N Pollachi Valparai Tour Package",
+            slug: "pollachi-valparai-2d-1n",
+          },
+          {
+            name: "3D 2N Pollachi Topslip Parambikulam Valparai",
+            slug: "pollachi-topslip-parambikulam-valparai-3d-2n",
+          },
+          {
+            name: "4D 3N Topslip Parambikulam Valparai Athirapally",
+            slug: "topslip-parambikulam-valparai-athirapally-4d-3n",
+          },
+          {
+            name: "5D 4N Coimbatore Isha Marudamalai Pollachi Valparai",
+            slug: "coimbatore-isha-valparai-5d-4n",
+          },
+        ],
+      },
 
-    // ── Valparai / Pollachi ──────────────────────────────
-    {
-      name: "2D 1N Pollachi Valparai Tour Package",
-      slug: "pollachi-valparai-2d-1n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "3D 2N Pollachi Topslip Parambikulam Valparai",
-      slug: "pollachi-topslip-parambikulam-valparai-3d-2n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "3D 2N Pollachi Topslip Parambikulam Valparai",
-      slug: "pollachi-topslip-parambikulam-valparai-3d-2n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "4D 3N Topslip Parambikulam Valparai Athirapally ",
-      slug: "topslip-parambikulam-valparai-athirapally-4d-3n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "5D 4N Coimbatore Isha Marudamalai Pollachi Valparai ",
-      slug: "coimbatore-isha-valparai-5d-4n",
-      icon: <MapPin size={14} />,
-    },
+      {
+        name: "Ooty Tour Packages",
+        slug: "ooty-tours",
+        icon: <MapPin size={14} />,
+        items: [
+          {
+            name: "3D 2N Coonoor Ooty Pykara Mudumalai",
+            slug: "coimbatore-ooty-mudumalai-3d-2n",
+          },
+          {
+            name: "4D 3N Coimbatore Coonoor Ooty Pykara Masinagudi",
+            slug: "coimbatore-ooty-masinagudi-4d-3n",
+          },
+          {
+            name: "6D 5N Grand Kodaikanal Ooty Coonoor Mudumalai",
+            slug: "coimbatore-kodai-ooty-mudumalai-6d-5n",
+          },
+        ],
+      },
 
-    // ── Ooty ────────────────────────────────────────────
-    {
-      name: "3D 2N Coonoor Ooty Pykara Mudumalai",
-      slug: "coimbatore-ooty-mudumalai-3d-2n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "4D 3N Coimbatore Coonoor Ooty Pykara Masinagudi",
-      slug: "coimbatore-ooty-masinagudi-4d-3n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "6D 5N Grand Kodaikanal Ooty Coonoor Mudumalai",
-      slug: "coimbatore-kodai-ooty-mudumalai-6d-5n",
-      icon: <MapPin size={14} />,
-    },
+      {
+        name: "Kodaikanal Tour Packages",
+        slug: "kodaikanal-tours",
+        icon: <MapPin size={14} />,
+        items: [
+          {
+            name: "3D 2N Kodaikanal Local & Sightseeing",
+            slug: "kodai-road-kodaikanal-3d-2n",
+          },
+        ],
+      },
 
-    // ── Kodaikanal ──────────────────────────────────────
-    {
-      name: "3D 2N Kodaikanal Local & Sightseeing",
-      slug: "kodai-road-kodaikanal-3d-2n",
-      icon: <MapPin size={14} />,
-    },
-    // Note: "6D 5N Coimbatore Kodaikanal Ooty Coonoor Mudumalai" is shared
-    // with Ooty above — use the same slug to avoid duplication.
-
-    // ── Kerala ──────────────────────────────────────────
-    {
-      name: "3D 2N Kanthaloor Marayoor Munnar Tour",
-      slug: "coimbatore-kanthaloor-marayoor-munnar-3d-2n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "4D 3N Cochin Munnar Kanthaloor Marayoor",
-      slug: "cochin-munnar-kanthaloor-marayoor-4d-3n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "5D 4N Wonders of Kerala Coimbatore Departure",
-      slug: "coimbatore-kerala-wonders-5d-4n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "6D 5N Cochin Alleppey Munnar Thekkady",
-      slug: "cochin-alleppey-munnar-thekkady-6d-5n",
-      icon: <MapPin size={14} />,
-    },
-    {
-      name: "10D 9N Cochin To Wayanad Trivandrum Grand Tour",
-      slug: "kerala-panorama-10d-9n",
-      icon: <MapPin size={14} />,
-    },
-
-  ],
-},
+      {
+        name: "Kerala Tour Packages",
+        slug: "kerala-tours",
+        icon: <MapPin size={14} />,
+        items: [
+          {
+            name: "3D 2N Kanthaloor Marayoor Munnar Tour",
+            slug: "coimbatore-kanthaloor-marayoor-munnar-3d-2n",
+          },
+          {
+            name: "4D 3N Cochin Munnar Kanthaloor Marayoor",
+            slug: "cochin-munnar-kanthaloor-marayoor-4d-3n",
+          },
+          {
+            name: "5D 4N Wonders of Kerala Coimbatore Departure",
+            slug: "coimbatore-kerala-wonders-5d-4n",
+          },
+          {
+            name: "6D 5N Cochin Alleppey Munnar Thekkady",
+            slug: "cochin-alleppey-munnar-thekkady-6d-5n",
+          },
+          {
+            name: "10D 9N Cochin To Wayanad Trivandrum Grand Tour",
+            slug: "kerala-panorama-10d-9n",
+          },
+        ],
+      },
+    ],
+  },
   {
     name: "Hotels",
     slug: "hotels",
@@ -148,6 +151,7 @@ export const navData = [
     icon: <Car size={16} />,
   },
   {
+    hider:true,
     name: "Valparai Guide",
     slug: "valparai",
     icon: <Info size={16} />,
@@ -428,7 +432,7 @@ export const tourPackages = [
     category: "Kerala",
     tourFrom: "Cochin",
     description: "From Cochin's shores to Munnar's emerald hills — this 4-day Kerala escape blends coastal charm with misty mountain serenity.",
-    termsConditions: ["Standard Kerala T&C apply"],
+     termsConditions: ["The rates are inclusive of all taxes", "All the bookings must be confirmed with a 50% advance payment.", "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children", "15 days before scheduled arrival – 75% refund.", "8 – 14 days before scheduled arrival – 50% refund.", "7 days or less – no refund."],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
     includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
@@ -445,7 +449,7 @@ export const tourPackages = [
     category: "Kerala",
     tourFrom: "Coimbatore",
     description: "Spice trails, mountain mists & cultural gems — experience the wonders of Kerala in one action-packed 5-day Coimbatore departure.",
-    termsConditions: ["Standard Kerala T&C apply"],
+     termsConditions: ["The rates are inclusive of all taxes", "All the bookings must be confirmed with a 50% advance payment.", "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children", "15 days before scheduled arrival – 75% refund.", "8 – 14 days before scheduled arrival – 50% refund.", "7 days or less – no refund."],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
     includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
@@ -462,7 +466,7 @@ export const tourPackages = [
     category: "Kerala",
     tourFrom: "Cochin",
     description: "Float on Alleppey's legendary backwaters, then wake to Munnar's misty tea hills — the most romantic 5-day Kerala escape awaits.",
-    termsConditions: ["The rates are inclusive of all taxes", "All the bookings must be confirmed with a 50% advance payment."],
+    termsConditions: ["The rates are inclusive of all taxes", "All the bookings must be confirmed with a 50% advance payment.", "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children", "15 days before scheduled arrival – 75% refund.", "8 – 14 days before scheduled arrival – 50% refund.", "7 days or less – no refund."],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
     includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
@@ -479,7 +483,7 @@ export const tourPackages = [
     category: "Kerala",
     tourFrom: "Cochin",
     description: "Backwaters, tea hills & spice trails — savour the full flavour of Kerala across Alleppey, Munnar & Thekkady in 6 magical days.",
-    termsConditions: ["Standard Kerala T&C apply"],
+     termsConditions: ["The rates are inclusive of all taxes", "All the bookings must be confirmed with a 50% advance payment.", "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children", "15 days before scheduled arrival – 75% refund.", "8 – 14 days before scheduled arrival – 50% refund.", "7 days or less – no refund."],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
      includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
@@ -496,7 +500,7 @@ export const tourPackages = [
     category: "Kerala",
     tourFrom: "Cochin",
     description: "Mountains to beaches, forests to backwaters — Kerala's ultimate 10-day signature journey from Wayanad's mist to Kovalam's surf.",
-    termsConditions: ["Standard Kerala T&C apply"],
+     termsConditions: ["The rates are inclusive of all taxes", "All the bookings must be confirmed with a 50% advance payment.", "Members Occupancy in a room: 3 Adults or 2 Adults and 1 Children", "15 days before scheduled arrival – 75% refund.", "8 – 14 days before scheduled arrival – 50% refund.", "7 days or less – no refund."],
     priceTiers: [{ members: "2 members", price: "3,499" }, { members: "3 members", price: "2,999" }, { members: "4 members", price: "2,499" }, { members: "5+ members", price: "1,999" }],
    includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],

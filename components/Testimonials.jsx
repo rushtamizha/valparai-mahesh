@@ -51,7 +51,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Review Text */}
-                <p className="flex-grow mb-8 text-sm italic font-medium leading-relaxed text-slate-600">
+                <p className="flex-grow mb-8 text-sm  font-medium leading-relaxed text-slate-600">
                   "{review.description?.slice(0, 100) || "Great experience with Mahesh Tours!"}..."
                 </p>
 

@@ -29,7 +29,7 @@ const AboutSection = () => {
               <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
                 The Heritage of Valparai
               </span>
-              <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
+              <h2 className="text-black text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
                 Crafting <span className="text-emerald-500">Memories</span>
               </h2>
               

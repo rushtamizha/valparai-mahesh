@@ -20,7 +20,7 @@ const VehicleSection = () => {
           <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
             Our Private Fleet
           </span>
-          <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
+          <h2 className="text-black text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
             Luxury <span className="text-emerald-500">FleetS</span> 
           </h2>
           <p className="font-medium leading-relaxed tracking-wider text-slate-500 text">
@@ -54,8 +54,8 @@ const VehicleSection = () => {
                     alt={vehicle.name}
                     className="w-full h-full transition-transform duration-1000 object-fit group-hover:scale-110"
                   />
-                  <div className="absolute top-5 left-5 bg-emerald-950/90 backdrop-blur-md px-4 py-1.5 rounded-full shadow-xl">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-emerald-400">
+                  <div className="absolute px-4 py-1 rounded-full shadow-xl top-5 left-5 bg-emerald-950/90 backdrop-blur-md">
+                    <span className="text-[9px] font-black uppercase  tracking-widest text-white">
                       {vehicle.type}
                     </span>
                   </div>

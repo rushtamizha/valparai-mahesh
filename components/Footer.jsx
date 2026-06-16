@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { tourPackages } from "@/data/data";
+import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,7 +14,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-4">
             <h2 className="mb-6 text-2xl font-black tracking-tighter uppercase">
-              mahesh{" "}
+              Valparai mahesh{" "}
               <span className="uppercase text-emerald-400">travels.</span>
             </h2>
             <p className="max-w-sm mb-8 text-sm font-medium leading-relaxed tracking-wider capitalize text-emerald-100/60">
@@ -20,8 +22,9 @@ const Footer = () => {
               the western ghats with academic precision and local heart.
             </p>
             <div className="flex gap-4">
-              <SocialIcon icon={<MapPin size={18} />} href="#" />
-              <SocialIcon icon={<MapPin size={18} />} href="#" />
+              <SocialIcon icon={<BsInstagram size={18} />} href="https://www.instagram.com/valparai_mahesh_travels?igsh=MXBwYjh4Z3dnaXd2ZA==" />
+              <SocialIcon icon={<FaFacebook size={18} />} href="https://www.facebook.com/share/18nVE4uTYe/" />
+              <SocialIcon icon={<BsYoutube size={18} />} href="https://youtube.com/@valparaimaheshtravels3388?si=NMu5snCxJ-KwoRSg" />
             </div>
           </div>
 
@@ -62,7 +65,7 @@ const Footer = () => {
               <ContactItem
                 icon={<Mail size={16} />}
                 title="email"
-                value="valparaiholidaytours@gmail.com"
+                value="maheshtravels2005@gmail.com"
               />
               <ContactItem
                 icon={<MapPin size={16} />}

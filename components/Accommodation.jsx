@@ -128,7 +128,7 @@ const BookingModal = ({ isOpen, onClose, roomName, whatsappNumber }) => {
 
 
 export default function AccommodationPage() {
-  const whatsappNumber = "919876543210";
+  const whatsappNumber = "919487424257";
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState("");
 
@@ -151,7 +151,7 @@ export default function AccommodationPage() {
           <div className="flex flex-col items-end justify-between gap-6 mb-5 md:flex-row">
             <div className="max-w-2xl">
               <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">Premium Accommodation</span>
-              <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">Luxury Hotel <span className="text-emerald-500">Stays & Resorts</span></h2>
+              <h2 className="text-black text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">Luxury Hotel <span className="text-emerald-500">Stays & Resorts</span></h2>
               <p className="font-medium leading-relaxed tracking-wide text-slate-600">Comfortable stays with premium amenities, beautiful interiors, and peaceful surroundings.</p>
             </div>
             <button onClick={() => openBooking("General Enquiry")} className="flex items-center gap-3 px-6 py-4 text-sm font-bold text-white transition-all rounded-full shadow-lg bg-emerald-800 hover:scale-105">

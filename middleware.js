@@ -15,7 +15,7 @@ export function middleware(request) {
     img-src 'self' blob: data: https:;
     video-src 'self' blob: data: https:;
     connect-src 'self' https:;
-    frame-src 'self';
+    frame-src 'self' https://www.google.com https://maps.google.com;
     object-src 'none';
     base-uri 'self';
     form-action 'self';

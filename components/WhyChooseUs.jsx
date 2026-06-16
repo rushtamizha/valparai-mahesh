@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
             <span className="block mb-2 text-xs font-semibold tracking-wider uppercase text-emerald-500">
               the advantage
             </span>
-            <h2 className="text-emerald-900 text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
+            <h2 className="text-black text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
               why travel <br /> 
               <span className="text-emerald-500">with mahesh?</span>
             </h2>
