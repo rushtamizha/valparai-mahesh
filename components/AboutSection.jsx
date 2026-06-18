@@ -66,7 +66,7 @@ const AboutSection = () => {
               {/* Profile Image Wrapper */}
               <div className="relative w-24 h-24 mb-6">
                 <div className="w-full h-full overflow-hidden border-4 border-white shadow-md rounded-2xl">
-                   <Image width={100}  height={100} src={companyConfig.founderImg} alt="Mahesh Kumar" className="object-cover w-full h-full" />
+                   <Image quality={100}  width={100}  height={100} src={companyConfig.founderImg} alt="Mahesh Kumar" className="object-cover w-full h-full" />
                 </div>
                 <div className="absolute p-2 text-white rounded-lg shadow-lg -bottom-2 -right-2 bg-emerald-500">
                   <Award size={16} />

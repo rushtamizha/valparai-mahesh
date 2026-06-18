@@ -50,7 +50,7 @@ const VehicleSection = () => {
               >
                 {/* Image Container with Peak Effect */}
                 <div className="relative h-64 overflow-hidden bg-slate-200">
-                  <Image width={100}  height={100} 
+                  <Image quality={100} width={100}  height={100} 
                     src={vehicle.image} 
                     alt={vehicle.name}
                     className="w-full h-full transition-transform duration-1000 object-fit group-hover:scale-110"

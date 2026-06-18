@@ -194,6 +194,18 @@ export default async function RootLayout({ children }) {
       lang="en"
       className="h-full antialiased"
     >
+      <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-H8M1ZEY840"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-H8M1ZEY840');
+          `}
+        </Script>
       {/* 
         Passing the nonce string directly to the nonce property on the body tag 
         tells Next.js to inject this token into all internal framework scripts.

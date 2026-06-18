@@ -39,7 +39,7 @@ const Navbar = () => {
           className="flex items-center gap-3 px-4 cursor-pointer group"
         >
           <div className="relative flex-shrink-0 transition-transform duration-300 h-11 w-11 group-hover:scale-110">
-            <Image width={100}  height={100} 
+            <Image quality={100}  width={100}  height={100} 
               src={companyConfig.logo}
               alt={companyConfig.name}
               className="object-cover w-full h-full border-2 rounded-full border-emerald-50"

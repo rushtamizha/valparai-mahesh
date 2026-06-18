@@ -63,7 +63,7 @@ export default function TravelPartners() {
             {partners.map((logo, index) => (
               <SwiperSlide key={index}>
                 <div className="flex items-center justify-center m-3 transition-all duration-300 bg-white rounded-3xl border-slate-100 ">
-                  <Image width={100}  height={100}
+                  <Image quality={100}  width={100}  height={100}
                     src={logo}
                     alt="Travel Partner"
                     className="object-contain w-full h-full transition-all duration-300 rounded-full "/>

@@ -29,7 +29,7 @@ const EnterpriseHero = () => {
           {heroData.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className="relative w-full h-full">
-                <Image width={100}  height={100} 
+                <Image quality={100}    width={100}  height={100} 
                   src={slide.image} 
                   className="object-cover w-full h-full" 
                   alt={slide.title} 

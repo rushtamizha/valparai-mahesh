@@ -52,7 +52,7 @@ const GallerySection = () => {
             {galleryImages.map((img) => (
               <SwiperSlide key={img.id}>
                 <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden shadow-xl">
-                  <Image width={100}  height={100} src={img.src} alt={img.title} className="object-cover w-full h-full" />
+                  <Image quality={100}  width={100}  height={100} src={img.src} alt={img.title} className="object-cover w-full h-full" />
                   <div className="absolute inset-0 flex items-end hidden p-8 bg-gradient-to-t from-emerald-950/80 to-transparent">
                     <p className="text-sm font-black tracking-widest text-white uppercase">{img.title}</p>
                   </div>
@@ -129,7 +129,7 @@ const GalleryItem = ({ img, className, onClick }) => (
     className={`relative rounded-[3rem] overflow-hidden cursor-pointer group shadow-sm hover:shadow-2xl hover:shadow-emerald-900/20 transition-all duration-500 ${className}`}
     onClick={onClick}
   >
-    <Image width={100}  height={100} 
+    <Image quality={100}  width={100}  height={100} 
       src={img.src} 
       alt={img.title} 
       className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110" 
