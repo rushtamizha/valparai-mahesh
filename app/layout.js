@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { headers } from "next/headers";
-
+import { GoogleAnalytics } from '@next/third-parties/google'; // Alternative method
 const siteUrl = "https://www.valparaimaheshtravels.com";
 
 export const metadata = {
@@ -194,25 +194,16 @@ export default async function RootLayout({ children }) {
       lang="en"
       className="h-full antialiased"
     >
-      <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-H8M1ZEY840"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-H8M1ZEY840');
-          `}
-        </Script>
+      
       {/* 
         Passing the nonce string directly to the nonce property on the body tag 
         tells Next.js to inject this token into all internal framework scripts.
       */}
       <body className="flex flex-col min-h-full font-sans" nonce={nonce} suppressHydrationWarning >
+        <GoogleAnalytics gaId="G-H8M1ZEY840" />
         <Navbar/>
         <main className="flex-grow">
+          
           {children}
         </main>
         <Footer/>
