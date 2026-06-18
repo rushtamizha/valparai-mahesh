@@ -261,7 +261,7 @@ export const tourPackages = [
     includes: ["Private Cab for pick up till drop", "Accommodation with Comfortable Stay", "Dinner/Breakfast Complementary (vegetarian)", "Driver Beta", "Toll/ Parking", "Interstate Permit"],
     excludes: ["Cost of entry tickets", "Personal Expenses", "Lunch"],
     image: "/pollachi-topslip-valparai/pollachi-topslip-parambikulam-valparai-3d-2n.png",
-    places: ["/pollachi-topslip-valparai/pollachi-topslip-valparai-1.webp", "/pollachi-topslip-valparai/pollachi-topslip-valparai-2.webp", "/pollachi-topslip-valparai/pollachi-topslip-valparai-3.jpg", "/pollachi-topslip-valparai/pollachi-topslip-valparai-4.jpg"],
+    places: ["/pollachi-topslip-valparai/pollachi-valparai-topslip-1.webp", "/pollachi-topslip-valparai/pollachi-valparai-topslip-2.webp", "/pollachi-topslip-valparai/pollachi-valparai-topslip-3.webp", "/pollachi-topslip-valparai/pollachi-valparai-topslip-4.jpg","/pollachi-topslip-valparai/pollachi-valparai-topslip-5.jpg"],
     tag: "Best Seller",
   },
   {
