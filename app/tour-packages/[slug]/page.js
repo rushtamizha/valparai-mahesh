@@ -67,7 +67,7 @@ export async function generateMetadata({ params }) {
       title,
       description,
       url: pageUrl,
-      siteName: "Your Travel Brand",
+      siteName: "Valparai Mahesh Travels",
       locale: "en_IN",
       type: "website",
 

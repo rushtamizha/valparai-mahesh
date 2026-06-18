@@ -10,6 +10,7 @@ import "swiper/css/effect-fade";
 // Assumed heroData structure from your data.js
 import { heroData, companyConfig } from "@/data/data";
 import Link from "next/link";
+import Image from "next/image";
 
 const EnterpriseHero = () => {
   return (
@@ -28,7 +29,7 @@ const EnterpriseHero = () => {
           {heroData.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className="relative w-full h-full">
-                <motion.img 
+                <Image width={100}  height={100} 
                   src={slide.image} 
                   className="object-cover w-full h-full" 
                   alt={slide.title} 

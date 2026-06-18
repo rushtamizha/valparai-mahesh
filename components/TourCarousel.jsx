@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { tourPackages } from "@/data/data";
+import Image from "next/image";
 
 const TourCarousel = () => {
   return (
@@ -56,7 +57,7 @@ const TourCarousel = () => {
               >
                 {/* Image Container */}
                 <div className="relative overflow-hidden h-50">
-                  <img 
+                  <Image width={100}  height={100} 
                     src={tour.image} 
                     alt={tour.title}
                     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
@@ -92,7 +93,7 @@ const TourCarousel = () => {
                         <p className="text-lg font-black tracking-wide text-emerald-900">₹{tour.basePrice}</p>
                     </div>
                     <Link 
-                        href={`/tours/${tour.slug}`}
+                        href={`/tour-packages/${tour.slug}`}
                         className="flex items-center justify-center w-12 h-12 text-white transition-colors rounded-full shadow-lg bg-emerald-900 hover:bg-emerald-500 shadow-emerald-900/20"
                     >
                         <ArrowUpRight size={20} />
@@ -106,7 +107,7 @@ const TourCarousel = () => {
 
         {/* Mobile View All Button */}
         <div className="mt-8 text-center md:hidden">
-            <Link href="/packages" className="inline-block px-8 py-4 text-xs font-black tracking-widest uppercase bg-white border rounded-full border-slate-200 text-emerald-900">
+            <Link href="/tour-packages" className="inline-block px-8 py-4 text-xs font-black tracking-widest uppercase bg-white border rounded-full border-slate-200 text-emerald-900">
                 Explore All Packages
             </Link>
         </div>

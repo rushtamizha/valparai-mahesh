@@ -7,6 +7,7 @@ import Link from "next/link";
 // Ensure these paths match your folder structure
 import { navData, companyConfig } from "@/data/data";
 import { div } from "framer-motion/client";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
@@ -38,7 +39,7 @@ const Navbar = () => {
           className="flex items-center gap-3 px-4 cursor-pointer group"
         >
           <div className="relative flex-shrink-0 transition-transform duration-300 h-11 w-11 group-hover:scale-110">
-            <img
+            <Image width={100}  height={100} 
               src={companyConfig.logo}
               alt={companyConfig.name}
               className="object-cover w-full h-full border-2 rounded-full border-emerald-50"

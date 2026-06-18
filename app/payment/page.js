@@ -12,6 +12,7 @@ import {
   Smartphone,
   Download
 } from "lucide-react";
+import Image from "next/image";
 
 export default function PaymentPage() {
   const accountDetails = [
@@ -60,7 +61,7 @@ export default function PaymentPage() {
 
             {/* QR Image Placeholder */}
             <div className="relative group mx-auto w-64 h-64 bg-slate-50 rounded-[2rem] border-2 border-dashed border-slate-200 flex items-center justify-center overflow-hidden">
-              <img 
+              <Image width={100}  height={100} 
                 src="/payment.png" 
                 alt="Payment QR Code" 
                 className="object-contain w-full h-full p-4 transition-transform duration-500 group-hover:scale-105"

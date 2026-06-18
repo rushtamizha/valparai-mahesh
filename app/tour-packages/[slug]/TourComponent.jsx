@@ -32,6 +32,7 @@ import TourHero from "@/components/TourHero";
 import RelatedTours from "@/components/RelatedTours";
 import TourImageGallery from "@/components/TourImageGallery";
 import Testimonials from "@/components/Testimonials";
+import Image from "next/image";
 
 
 const Input = ({ icon, ...props }) => (
@@ -205,7 +206,7 @@ const TourDetails = ( {params} ) => {
                                       (act, i) =>
                                         act.placeImage && (
                                           <SwiperSlide key={i}>
-                                            <img
+                                            <Image width={100} height={100} 
                                               src={act.placeImage}
                                               className="object-cover w-full h-full"
                                               alt={act.place}

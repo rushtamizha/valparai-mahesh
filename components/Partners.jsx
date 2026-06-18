@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
+import Image from "next/image";
 
 const partners = [
   "/partners/partners-1.jpg",
@@ -62,7 +63,7 @@ export default function TravelPartners() {
             {partners.map((logo, index) => (
               <SwiperSlide key={index}>
                 <div className="flex items-center justify-center m-3 transition-all duration-300 bg-white rounded-3xl border-slate-100 ">
-                  <img
+                  <Image width={100}  height={100}
                     src={logo}
                     alt="Travel Partner"
                     className="object-contain w-full h-full transition-all duration-300 rounded-full "/>

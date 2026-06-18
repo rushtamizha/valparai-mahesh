@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import Image from "next/image";
 
 const TourMediaGallery = ({ images, title }) => {
   // Fallback media if the array is empty or undefined
@@ -79,7 +80,7 @@ const TourMediaGallery = ({ images, title }) => {
                         className="object-cover w-full h-full"
                       />
                     ) : (
-                      <img
+                      <Image width={100}  height={100}
                         src={item}
                         alt={`${title} view ${index + 1}`}
                         className="object-cover w-full h-full"

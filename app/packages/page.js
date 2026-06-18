@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { tourPackages } from "@/data/data";
 import { Clock, ArrowUpRight, MapPin } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const TourCard = ({ tour }) => (
   <motion.div 
@@ -16,7 +17,7 @@ const TourCard = ({ tour }) => (
   >
     {/* Image Container */}
     <div className="relative h-64 overflow-hidden">
-      <img 
+      <Image width={100}  height={100} 
         src={tour.image} 
         alt={tour.title}
         className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
@@ -65,7 +66,7 @@ const TourCard = ({ tour }) => (
           </p>
         </div>
         <Link 
-          href={`/tours/${tour.slug}`}
+          href={`/tour-packages/${tour.slug}`}
           className="flex items-center justify-center text-white transition-all rounded-full shadow-lg w-14 h-14 bg-emerald-900 hover:bg-emerald-500 hover:-rotate-12 shadow-emerald-900/20"
         >
           <ArrowUpRight size={24} />

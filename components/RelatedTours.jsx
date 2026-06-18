@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 export default function RelatedTours({ tours }) {
   return (
@@ -44,9 +45,9 @@ export default function RelatedTours({ tours }) {
 
 function TourSidebarCard({ item }) {
   return (
-    <Link href={`/tours/${item.slug}`} className="block group">
+    <Link href={`/tour-packages/${item.slug}`} className="block group">
       <div className="relative h-64 lg:h-48 rounded-[2rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm group-hover:shadow-xl transition-all duration-500">
-        <img 
+        <Image width={100}  height={100} 
           src={item.image} 
           alt={item.title} 
           className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" 

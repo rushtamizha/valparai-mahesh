@@ -5,6 +5,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import { Maximize2, Play } from "lucide-react"; // Imported missing icons
 import "swiper/css";
 import "swiper/css/effect-fade";
+import Image from "next/image";
 
 export default function TourHero({ tour }) {
   // Safe extraction of values assuming tour is an object containing titles, tags, and media URLs
@@ -53,7 +54,7 @@ export default function TourHero({ tour }) {
                       className="object-cover w-full h-full animate-subtle-zoom"
                     />
                   ) : (
-                    <img 
+                    <Image width={100}  height={100} 
                       src={item}
                       alt={`${tourTitle} view ${index + 1}`}
                       className="object-cover w-full h-full animate-subtle-zoom"
@@ -79,7 +80,7 @@ export default function TourHero({ tour }) {
           <span className="px-5 py-2 bg-emerald-500 text-white rounded-full text-[11px] font-black uppercase tracking-[0.3em] shadow-2xl inline-block mb-6">
             {tourTag}
           </span>
-          <h1 className="text-white text-4xl md:text-6xl font-black tracking-tighter uppercase leading-[0.9]">
+          <h1 className="text-white text-xl md:text-3xl font-black tracking-tighter uppercase leading-[0.9]">
             {tourTitle.split(" ")[0]} <br />
             <span className="text-emerald-400">
               {tourTitle.split(" ").slice(1).join(" ")}

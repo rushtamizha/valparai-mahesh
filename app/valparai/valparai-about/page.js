@@ -20,6 +20,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { galleryImage } from "@/data/data";
+import Image from "next/image";
 
 export default function AboutValparai() {
   const stats = [
@@ -35,7 +36,7 @@ export default function AboutValparai() {
       {/* 1. HERO SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-emerald-950">
               <div className="absolute inset-0 opacity-40 ">
-                 <img src="/HeroImages/valparai-tour-package.png" className="object-cover w-full h-full" alt="Attractions" />
+                 <Image width={100}  height={100} src="/HeroImages/valparai-tour-package.png" className="object-cover w-full h-full" alt="Attractions" />
               </div>
               <div className="container relative z-10 px-6 text-center">
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -93,7 +94,7 @@ export default function AboutValparai() {
           <div className="grid items-center gap-20 lg:grid-cols-2">
             <div className="relative group">
               <div className="overflow-hidden aspect-[4/5]">
-                <img src="/galleryImages/gvh.jpg" className="object-contain w-full h-full transition-all duration-700 rounded-xl " alt="valparai history" />
+                <Image width={100}  height={100} src="/galleryImages/gvh.jpg" className="object-contain w-full h-full transition-all duration-700 rounded-xl " alt="valparai history" />
               </div>
             </div>
 
@@ -143,7 +144,7 @@ export default function AboutValparai() {
             {galleryImage.map((i) => (
               <SwiperSlide key={i}>
                 <div className="aspect-[3/4] rounded-[3rem] overflow-hidden border border-white/10 relative group">
-                   <img src={i} className="object-cover w-full h-full transition-all duration-500 " />
+                   <Image width={100}  height={100} src={i} className="object-cover w-full h-full transition-all duration-500 " />
                    <div className="absolute inset-0 flex items-end p-8 transition-opacity opacity-0 bg-gradient-to-t from-emerald-950/80 to-transparent group-hover:opacity-100">
                       <p className="text-lg font-black text-white capitalize">valparai captures.</p>
                    </div>

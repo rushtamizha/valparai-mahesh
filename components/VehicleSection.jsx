@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { fleet } from "@/data/data";
+import Image from "next/image";
 
 const VehicleSection = () => {
   return (
@@ -49,7 +50,7 @@ const VehicleSection = () => {
               >
                 {/* Image Container with Peak Effect */}
                 <div className="relative h-64 overflow-hidden bg-slate-200">
-                  <img 
+                  <Image width={100}  height={100} 
                     src={vehicle.image} 
                     alt={vehicle.name}
                     className="w-full h-full transition-transform duration-1000 object-fit group-hover:scale-110"

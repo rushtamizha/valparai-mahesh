@@ -20,8 +20,8 @@ import { BsCash } from "react-icons/bs";
 
 export const companyConfig = {
   name: "Valparai Mahesh Travels",
-  founderImg: "founder.jpg",
-  logo: "logo.jpg",
+  founderImg: "/founder.jpg",
+  logo: "/logo.jpg",
   contact: {
     phone: "+91 9487424257",
     whatsapp: "919487424257", // International format for URL linking

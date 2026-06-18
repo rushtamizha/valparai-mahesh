@@ -37,7 +37,7 @@ const Footer = () => {
               {tourPackages.map((pkg, i) => (
                 <li key={i}>
                   <Link
-                    href={`/tours/${pkg.slug}`}
+                    href={`/tour-packages/${pkg.slug}`}
                     className="flex items-center justify-between text-sm font-semibold tracking-wider transition-colors group text-emerald-100/80 hover:text-white"
                   >
                     <span className="">{pkg.title}</span>
