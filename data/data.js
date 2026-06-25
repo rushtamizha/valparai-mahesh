@@ -178,53 +178,69 @@ export const navData = [
 
 export const heroData = [
   {
-  id: 1,
-  title: "Kerala Refined.",
-  description:
-    "Experience bespoke luxury travel. From private houseboats to mist-covered estates, we curate the soul of Kerala.",
-  image: "/HeroImages/valparai-athirapally-tour-package.webp",
-  badge: "God's Own Country",
-  tags: [
-    { icon: <Waves size={14} />, label: "Backwaters" },
-    { icon: <Star size={14} />, label: "Premium Stay" },
-  ],
-},
-{
-  id: 2,
-  title: "Misty Munnar.",
-  description:
-    "Walk through emerald tea gardens and stay in colonial-style estates overlooking the Western Ghats.",
-  image: "/HeroImages/valparai-parambikulam-tour-package.webp",
-  badge: "Hill Station Special",
-  tags: [
-    { icon: <Palmtree size={14} />, label: "Tea Gardens" },
-    { icon: <Mountain size={14} />, label: "Trekking" },
-  ],
-},
-{
-  id: 3,
-  title: "Misty Munnar.",
-  description:
-    "Walk through emerald tea gardens and stay in colonial-style estates overlooking the Western Ghats.",
-  image: "/HeroImages/valparai-topslip-tour-packages.webp",
-  badge: "Hill Station Special",
-  tags: [
-    { icon: <Palmtree size={14} />, label: "Tea Gardens" },
-    { icon: <Mountain size={14} />, label: "Trekking" },
-  ],
-},
-{
-  id: 4,
-  title: "Misty Munnar.",
-  description:
-    "Walk through emerald tea gardens and stay in colonial-style estates overlooking the Western Ghats.",
-  image: "/HeroImages/valparai-tour-package.webp",
-  badge: "Hill Station Special",
-  tags: [
-    { icon: <Palmtree size={14} />, label: "Tea Gardens" },
-    { icon: <Mountain size={14} />, label: "Trekking" },
-  ],
-},
+    id: 1,
+    title: "Athirappilly Waterfalls Escape",
+    description:
+      "Witness Kerala's majestic Athirappilly Falls, lush forests, scenic drives, and unforgettable nature experiences.",
+    image: "/HeroImages/valparai-athirapally-tour-package.webp",
+    badge: "Waterfall Adventure",
+    tags: [
+      { icon: <Waves size={14} />, label: "Waterfalls" },
+      { icon: <Star size={14} />, label: "Nature Tour" },
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Parambikulam Wildlife Safari",
+    description:
+      "Explore Parambikulam Tiger Reserve, spot exotic wildlife, enjoy jungle safaris, and discover untouched forests.",
+    image: "/HeroImages/valparai-parambikulam-tour-package.webp",
+    badge: "Wildlife Special",
+    tags: [
+      { icon: <Palmtree size={14} />, label: "Safari" },
+      { icon: <Mountain size={14} />, label: "Wildlife" },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Topslip Jungle Adventure",
+    description:
+      "Experience the beauty of Topslip with forest safaris, elephant sightings, trekking trails, and eco-tourism.",
+    image: "/HeroImages/valparai-topslip-tour-package.webp",
+    badge: "Forest Getaway",
+    tags: [
+      { icon: <Palmtree size={14} />, label: "Eco Tourism" },
+      { icon: <Mountain size={14} />, label: "Jungle Safari" },
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Valparai Scenic Tour",
+    description:
+      "Discover winding mountain roads, tea plantations, waterfalls, viewpoints, and the natural charm of Valparai.",
+    image: "/HeroImages/valparai-tour-package.webp",
+    badge: "Most Popular",
+    tags: [
+      { icon: <Palmtree size={14} />, label: "Tea Estates" },
+      { icon: <Mountain size={14} />, label: "Viewpoints" },
+    ],
+  },
+
+  {
+    id: 5,
+    title: "Valparai Tour Packages",
+    description:
+      "Customized family, couple, and group tour packages covering Valparai, Topslip, Athirappilly, and Kerala destinations.",
+    image: "/HeroImages/valparai-tour-packages.webp",
+    badge: "Best Seller",
+    tags: [
+      { icon: <Palmtree size={14} />, label: "Custom Tours" },
+      { icon: <Mountain size={14} />, label: "Multi-Day Trips" },
+    ],
+  },
 ];
 
 // data/data.js
