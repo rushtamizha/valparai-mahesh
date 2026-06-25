@@ -182,7 +182,7 @@ export const heroData = [
   title: "Kerala Refined.",
   description:
     "Experience bespoke luxury travel. From private houseboats to mist-covered estates, we curate the soul of Kerala.",
-  image: "/HeroImages/valparai-athirapally-tour-package.png",
+  image: "/HeroImages/valparai-athirapally-tour-package.webp",
   badge: "God's Own Country",
   tags: [
     { icon: <Waves size={14} />, label: "Backwaters" },
@@ -194,7 +194,7 @@ export const heroData = [
   title: "Misty Munnar.",
   description:
     "Walk through emerald tea gardens and stay in colonial-style estates overlooking the Western Ghats.",
-  image: "/HeroImages/valparai-parambikulam-tour-package.png",
+  image: "/HeroImages/valparai-parambikulam-tour-package.webp",
   badge: "Hill Station Special",
   tags: [
     { icon: <Palmtree size={14} />, label: "Tea Gardens" },
@@ -206,7 +206,7 @@ export const heroData = [
   title: "Misty Munnar.",
   description:
     "Walk through emerald tea gardens and stay in colonial-style estates overlooking the Western Ghats.",
-  image: "/HeroImages/valparai-topslip-tour-package.png",
+  image: "/HeroImages/valparai-topslip-tour-packages.webp",
   badge: "Hill Station Special",
   tags: [
     { icon: <Palmtree size={14} />, label: "Tea Gardens" },
@@ -218,7 +218,7 @@ export const heroData = [
   title: "Misty Munnar.",
   description:
     "Walk through emerald tea gardens and stay in colonial-style estates overlooking the Western Ghats.",
-  image: "/HeroImages/valparai-tour-package.png",
+  image: "/HeroImages/valparai-tour-package.webp",
   badge: "Hill Station Special",
   tags: [
     { icon: <Palmtree size={14} />, label: "Tea Gardens" },

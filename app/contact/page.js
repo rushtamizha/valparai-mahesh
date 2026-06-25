@@ -96,7 +96,7 @@ export default function ContactPage() {
           <ContactInfoCard
             icon={Phone}
             title="Call Us Directly"
-            detail="+91 98765 43210"
+            detail="+91 8300950311"
             subDetail="Available 9:00 AM - 9:00 PM"
             link="tel:+919487424257"
           />
