@@ -581,7 +581,7 @@ export default async function RootLayout({ children }) {
         nonce={nonce}
         suppressHydrationWarning
       >
-        <GoogleAnalytics gaId="G-H8M1ZEY840" />
+        <GoogleAnalytics gaId="G-Z86PCC3410" />
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
