@@ -8,7 +8,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const siteUrl   = "https://www.valparaimaheshtravels.com";
 const phone     = "+919487424257";
 const email     = "valparaiholidaytours@gmail.com";
-const heroImage = `${siteUrl}/HeroImages/valparai-tour-packages.webp`;
+const heroImage = `${siteUrl}/valparai-tour-packages.webp`;
 
 // ─── Metadata (Next.js App Router) ───────────────────────────────────────────
 // FIX 1: Title is now under 60 chars with primary keyword FIRST
@@ -25,7 +25,7 @@ export const metadata = {
   },
 
   description:
-    "Book Valparai Tour Packages from Coimbatore, Pollachi & Chennai. Wildlife Safari, Topslip, Parambikulam & Kerala tours. 4.9★ | 431 Reviews | ☎ +91 94874 24257.",
+    "Book Valparai Tour Packages from Coimbatore, Pollachi & Chennai. Wildlife Safari, Topslip, Parambikulam & Kerala tours. 4.9★ | 431 Reviews | ☎ +91 83009 50311.",
    verification: {
     google: "dsRWqODpGPps79Vzdi4",
   },
@@ -332,7 +332,7 @@ function buildSchemas(siteUrl, phone, email, heroImage) {
           acceptedAnswer: {
             "@type": "Answer",
             text:
-              "Valparai tour packages from Valparai Mahesh Travels vary based on the package type, duration, number of guests, and accommodation. We offer day trips, overnight, and multi-day packages for families, couples, and groups at the best prices. Call +91 94874 24257 or WhatsApp for a customised quote.",
+              "Valparai tour packages from Valparai Mahesh Travels vary based on the package type, duration, number of guests, and accommodation. We offer day trips, overnight, and multi-day packages for families, couples, and groups at the best prices. Call +91 83009 50311 or WhatsApp for a customised quote.",
           },
         },
         {
