@@ -5,9 +5,9 @@ import { headers } from "next/headers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
-const siteUrl   = "https://www.valparaimaheshtravels.com";
+const siteUrl   = "https://www.valparaiholidaytours.com/";
 const phone     = "+919487424257";
-const email     = "valparaiholidaytours@gmail.com";
+const email     = "maheshtravels2005@gmail.com";
 const heroImage = `${siteUrl}/valparai-tour-packages.webp`;
 
 // ─── Metadata (Next.js App Router) ───────────────────────────────────────────

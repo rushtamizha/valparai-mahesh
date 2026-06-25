@@ -25,7 +25,7 @@ export const companyConfig = {
   contact: {
     phone: "+91 9487424257",
     whatsapp: "919487424257", // International format for URL linking
-    email: "valparaiholidaytours@gmail.com", // Added missing data
+    email: "maheshtravels2005@gmail.com", // Added missing data
   },
   address: {
     street: "133/Chellandiamman Kovil Street",
