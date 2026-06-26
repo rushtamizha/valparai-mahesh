@@ -170,7 +170,7 @@ export default function AccommodationPage() {
               <SwiperSlide key={room.id}>
                 <div className="overflow-hidden bg-white border border-slate-100 rounded-[2.5rem] group">
                   <div className="relative overflow-hidden h-72">
-                    <Image quality={100}  width={100}  height={100} src={room.images[0]} className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" alt={room.name} />
+                    <img src={room.images[0]} className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" alt={room.name} />
                   </div>
                   <div className="p-7">
                     <h2 className="mb-4 text-lg font-black text-slate-800">{room.name}</h2>

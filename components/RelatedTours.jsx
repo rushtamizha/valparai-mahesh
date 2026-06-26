@@ -47,7 +47,7 @@ function TourSidebarCard({ item }) {
   return (
     <Link href={`/tour-packages/${item.slug}`} className="block group">
       <div className="relative h-64 lg:h-48 rounded-[2rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm group-hover:shadow-xl transition-all duration-500">
-        <Image quality={100}  width={100}  height={100} 
+        <img
           src={item.image} 
           alt={item.title} 
           className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" 

@@ -51,7 +51,7 @@ const AboutPage = () => {
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div className="relative">
               <div className="aspect-[4/5] rounded-[4rem] overflow-hidden">
-                <Image quality={100} width={100}  height={100}
+                <img
                   src="/founder.jpg" // Add your image here
                   alt="Mahesh Kumar - Founder"
                   className="object-cover w-full h-full"

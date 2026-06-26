@@ -54,7 +54,7 @@ export default function TourHero({ tour }) {
                       className="object-cover w-full h-full animate-subtle-zoom"
                     />
                   ) : (
-                    <Image quality={100} width={100}  height={100} 
+                    <img 
                       src={item}
                       alt={`${tourTitle} view ${index + 1}`}
                       className="object-cover w-full h-full animate-subtle-zoom"

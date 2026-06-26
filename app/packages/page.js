@@ -17,7 +17,7 @@ const TourCard = ({ tour }) => (
   >
     {/* Image Container */}
     <div className="relative h-64 overflow-hidden">
-      <Image quality={100}  width={100}  height={100} 
+      <img
         src={tour.image} 
         alt={tour.title}
         className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
