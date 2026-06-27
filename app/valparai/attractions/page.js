@@ -18,7 +18,7 @@ export default function AttractionsPage() {
       {/* 1. DYNAMIC HERO SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-emerald-950">
         <div className="absolute inset-0 opacity-40">
-           <imgsrc="/HeroImages/valparai-tour-package.png" className="object-cover w-full h-full" alt="Attractions" />
+           <img src="/HeroImages/valparai-tour-package.png" className="object-cover w-full h-full" alt="Attractions" />
         </div>
         <div className="container relative z-10 px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -63,7 +63,7 @@ export default function AttractionsPage() {
             {attractions.slice(0, 5).map((item, i) => (
               <SwiperSlide key={i}>
                 <div className="relative aspect-[3/4] rounded-[3rem] overflow-hidden group">
-                  <imgsrc={item.image} className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" alt={item.title} />
+                  <img src={item.image} className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" alt={item.title} />
                   <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-transparent to-transparent" />
                   <div className="absolute bottom-8 left-8 right-8">
                     <span className="text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-2 block">{item.tag}</span>
