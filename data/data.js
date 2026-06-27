@@ -259,19 +259,6 @@ export const tourPackages = [
      itinerary: [
       {
         day: "01",
-        title: "Arrival Valparai",
-        activities: [
-          {
-            id: 1,
-            place: "Arrival Valparai",
-            description: "Pickup transfer to hotel, free day",
-            placeImage:
-              "https://hotelnakshathra.com/images/blogs/42083f3207e211466dff236323d66d0e.jpg",
-          },
-        ],
-      },
-      {
-        day: "02",
         title: "Proceed for Aliyar Dam",
         activities: [
           {
@@ -368,7 +355,7 @@ export const tourPackages = [
         ],
       },
       {
-        day: "03",
+        day: "02",
         title: "Check out hotel",
         activities: [
           {
